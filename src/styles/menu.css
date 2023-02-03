@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+
+.head {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 2rem;
+}
+
+.head p {
+  font-size: 4rem;
+  color: wheat;
+  font-weight: 600;
+}
+
+.photo {
+  border-radius: 50%;
+}
+
+.phrase {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.75rem;
+  color: whitesmoke;
+  font-family: 'Courgette', cursive; 
+  text-align: center;
+}
+
+.sub-menu {
+  display: flex;
+  justify-content: center;
+  margin-top: 2%;
+}
+
+.menu-img {
+  position: absolute;
+  visibility: hidden;
+  display: flex;
+}
+
+.button-menu:nth-child(1n) {
+  background: #cc5560;
+}
+
+.button-menu:nth-child(2n) {
+  background: #b1bd2a;
+}
+
+.button-menu:nth-child(3n) {
+  background: #d07b31;
+}
+
+.button-menu:nth-child(4n) {
+  background: #84aaa3;
+}
+
+.button-menu:nth-child(5n) {
+  background: #7579c4;
+}
+
+.button-menu:nth-child(6n) {
+  background: #ad75c4;
+}
+
+.sub-menu ul {
+  color: white;
+  text-decoration: none;
+  list-style: none;
+  padding: 0;
+}
+
+.sub-menu li {
+  font-size: 1.25vw;
+  display: inline;
+  padding: 1rem;  
+}
+
+.button-menu {
+  margin: 2px;
+  padding-top: 20px;
+  padding-bottom: 50px;
+  display: inline;
+  font-weight: 600;
+  border-radius: 10%;
+  cursor: pointer;
+}
+
+.sub-menu div:hover {
+  color: black;
+  text-shadow: 1px 1px 3px;
+  /* padding-top: -30px; */
+  /* top: 50px; */
+  text-decoration-line: underline;
+}
+
+@media (max-width:360px) {
+  
+  .head p {
+    position: relative;
+    margin-top: 15%;
+    font-size: 1.75rem;
+    margin-top: 20%;
+  }
+  
+  .photo {
+    width: 15%;
+    position: absolute;
+    margin-top: -12%;
+    z-index: -1;
+  }
+  
+  .phrase {
+    margin-top: -7%;
+    text-align: center;
+    font-size: 1rem;
+    padding: 2%;
+  }
+
+
+  .sub-menu {
+    position: absolute;
+    display: block;
+    width: 80.2%;
+    margin-left: 10%;
+    margin-top: 10.5%;
+  }
+  .sub-menu li {
+    font-size: 1.25rem;
+    display: block;
+    padding: 0;  
+    margin-top: -7px;
+    text-align: center;
+  }
+  .menu-img {
+    border-radius: 10%;
+  }
+
+  .menu-img img {
+    visibility: visible;
+    justify-content: center;
+    margin-top: -65%;
+    padding-bottom: 30px;
+    background: #d07b31;
+    border-radius: 10%;
+  }
+
+  .button-menu {
+    margin: -1px;
+    padding-bottom: 10px;
+    display: block;
+    border-radius: 4px;
+    left: -150%;
+    z-index: 2;
+  }
+  .open {
+    transition: 0.5s;
+    left: -1px;
+  }
+}
+
+@media only screen and (min-width: 361px) and (max-width: 375px) {
+  .head p {
+    position: relative;
+    margin-top: 15%;
+    font-size: 1.75rem;
+    margin-top: 20%;
+  }
+  
+  .photo {
+    width: 15%;
+    position: absolute;
+    margin-top: -12%;
+    z-index: -1;
+  }
+  
+  .phrase {
+    margin-top: -7%;
+    text-align: center;
+    font-size: 1rem;
+    padding: 2%;
+  }
+
+
+  .sub-menu {
+    position: absolute;
+    display: block;
+    width: 80.2%;
+    margin-left: 10%;
+    margin-top: 10.5%;
+  }
+  .sub-menu li {
+    font-size: 1.25rem;
+    display: block;
+    padding: 0;  
+    margin-top: -7px;
+    text-align: center;
+  }
+  .menu-img {
+    border-radius: 10%;
+  }
+
+  .menu-img img {
+    visibility: visible;
+    justify-content: center;
+    margin-top: -65%;
+    padding-bottom: 30px;
+    background: #d07b31;
+    border-radius: 10%;
+  }
+
+  .button-menu {
+    margin: -1px;
+    padding-bottom: 10px;
+    display: block;
+    border-radius: 4px;
+    left: -150%;
+    z-index: 2;
+  }
+  .open {
+    transition: 0.5s;
+    left: -1px;
+  }
+}
+
+@media only screen and (min-width: 376px) and (max-width: 414px) {
+  .head p {
+    position: relative;
+    margin-top: 15%;
+    font-size: 1.75rem;
+    margin-top: 20%;
+  }
+  
+  .photo {
+    width: 15%;
+    position: absolute;
+    margin-top: -12%;
+    z-index: -1;
+  }
+  
+  .phrase {
+    margin-top: -7%;
+    text-align: center;
+    font-size: 1rem;
+    padding: 2%;
+  }
+
+
+  .sub-menu {
+    position: absolute;
+    display: block;
+    width: 80.2%;
+    margin-left: 10%;
+    margin-top: 10.5%;
+  }
+  .sub-menu li {
+    font-size: 1.25rem;
+    display: block;
+    padding: 0;  
+    margin-top: -7px;
+    text-align: center;
+  }
+  .menu-img {
+    border-radius: 10%;
+  }
+
+  .menu-img img {
+    visibility: visible;
+    justify-content: center;
+    margin-top: -65%;
+    padding-bottom: 30px;
+    background: #d07b31;
+    border-radius: 10%;
+  }
+
+  .button-menu {
+    margin: -1px;
+    padding-bottom: 10px;
+    display: block;
+    border-radius: 4px;
+    left: -150%;
+    z-index: 2;
+  }
+  .open {
+    transition: 0.5s;
+    left: -1px;
+  }
+}
+
+
