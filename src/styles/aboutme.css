@@ -96,7 +96,7 @@
     width: 100%;
   }
 
-  .phone, .coffee, .notebook, .headphones {
+  .phone img, .coffee img, .notebook img, .headphones img {
     display: none;
   }
 
