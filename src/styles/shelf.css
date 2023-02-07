@@ -4,7 +4,7 @@
 }
 
 .shelf {
-  margin-top: 20%;
+  margin-top: 14.7%;
 }
 
 .container-shadows {
@@ -73,6 +73,7 @@
 
   .shelf img {
     width: 100%;
+    margin-top: 5.6%;
   }
   
   .icons {
@@ -114,7 +115,7 @@
 
 
 
-@media only screen and (min-width: 361px) and (max-width: 375px){
+@media (min-width: 361px) and (max-width: 375px){
   .container-shelf {
     text-align: center;
   }
@@ -162,17 +163,18 @@
 
 
 
-@media only screen and (min-width: 376px) and (max-width: 414px){
+@media (min-width: 376px) and (max-width: 414px){
   .container-shelf {
     text-align: center;
   }
 
   .shelf img {
     width: 100%;
+    margin-top: 5.4%;
   }
   
   .icons {
-    margin-top: -1.2%;
+    margin-top: -1.4%;
     padding-left: 0;
   }
   

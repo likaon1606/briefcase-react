@@ -12,6 +12,7 @@ const Menu = () => {
   const [click4, setClick4] = useState(false);
   const [click5, setClick5] = useState(false);
   const [click6, setClick6] = useState(false);
+  const [click7, setClick7] = useState(false);
 
   const [clickMenu, setClickMenu] = useState(false);
 
@@ -67,41 +68,47 @@ const Menu = () => {
             <div className={`button-menu ${isOpen && "open"}`} 
             style={click1 ? yesClick : noClick} 
             onClick={() => {
-            setClick1(!click1, setClick2(false), setClick3(false), setClick4(false), setClick5(false), setClick6(false))
+            setClick1(!click1, setClick2(false), setClick3(false), setClick4(false), setClick5(false), setClick6(false), setClick7(false))
             }}>
               <li>Inicio</li>
             </div >
             <div className={`button-menu ${isOpen && "open"}`} 
               style={click2 ? yesClick : noClick } 
               onClick={() => {
-              setClick2(!click2, setClick1(false), setClick3(false), setClick4(false), setClick5(false), setClick6(false))
+              setClick2(!click2, setClick1(false), setClick3(false), setClick4(false), setClick5(false), setClick6(false), setClick7(false))
             }}>
-              <li>Acerca de mí</li>
+              <li>JavaScript</li>
             </div>
             <div className={`button-menu ${isOpen && "open"}`} 
             style={click3 ? yesClick : noClick} 
             onClick={() => {
-            setClick3(!click3, setClick1(false), setClick2(false), setClick4(false), setClick5(false), setClick6(false))
+            setClick3(!click3, setClick1(false), setClick2(false), setClick4(false), setClick5(false), setClick6(false), setClick7(false))
             }}>
-              <li>Proyectos React.js</li>
+              <li>React.js</li>
             </div>
             <div className={`button-menu ${isOpen && "open"}`} 
             style={click4 ? yesClick : noClick} 
             onClick={() => {
-            setClick4(!click4, setClick1(false), setClick2(false), setClick3(false), setClick5(false), setClick6(false))
+            setClick4(!click4, setClick1(false), setClick2(false), setClick3(false), setClick5(false), setClick6(false), setClick7(false))
             }}>
-              <li>Proyectos Wordpress</li>
+              <li>Node.js</li>
             </div>
             <div className={`button-menu ${isOpen && "open"}`} 
             style={click5 ? yesClick : noClick} 
             onClick={() => {
-            setClick5(!click5, setClick1(false), setClick2(false), setClick3(false), setClick4(false), setClick6(false))
+            setClick5(!click5, setClick1(false), setClick2(false), setClick3(false), setClick4(false), setClick6(false), setClick7(false))
+            }}>
+              <li>Wordpress</li>
+            </div>
+            <div className={`button-menu ${isOpen && "open"}`} 
+            style={click6 ? yesClick : noClick} onClick={() => {
+            setClick6(!click6, setClick1(false), setClick2(false), setClick3(false), setClick4(false), setClick5(false), setClick7(false))
             }}>
               <li>Certificaciones</li>
             </div>
             <div className={`button-menu ${isOpen && "open"}`} 
-            style={click6 ? yesClick : noClick} onClick={() => {
-            setClick6(!click6, setClick1(false), setClick2(false), setClick3(false), setClick4(false), setClick5(false))
+            style={click7 ? yesClick : noClick} onClick={() => {
+            setClick7(!click7, setClick1(false), setClick2(false), setClick3(false), setClick4(false), setClick5(false), setClick6(false))
             }}>
               <li>Contáctame</li>
             </div>

@@ -16,16 +16,24 @@ const Shelf = () => {
       <div className="container-shadows">
         <ul className="icons">
           <li className='linkedin'>
-            <img src={linkedin} alt='linkedin'/>
+            <a href='https://www.linkedin.com/in/ariel-f-78604898/' target='blank'>
+              <img src={linkedin} alt='linkedin'/>
+            </a>
           </li>
           <li>
-            <img src={mwd} alt='linkedin'/>
+            <a href='https://mexwebdesign.com/' target='blank'>
+              <img src={mwd} alt='mwd'/>
+            </a>
           </li>
           <li>
-            <img src={git} alt='linkedin'/>
+          <a href='https://github.com/likaon1606' target='blank'>
+              <img src={git} alt='github'/>
+            </a>
           </li>
           <li>
-            <img src={whats} alt='linkedin'/>
+          <a href='https://api.whatsapp.com/send?phone=525532604568' target='blank'>
+            <img src={whats} alt='whatsapp'/>
+            </a>
           </li>
         </ul>
         <ul className='shadows'>
@@ -43,7 +51,7 @@ const Shelf = () => {
           </li>
         </ul>
         <p className="copyright">
-          Copyright © 2023 | Diseños digitales MexWebDesign | Developer: Ariel Fuentes García 
+          Copyright © 2023 | Diseños digitales MexWebDesign | Developer: Ariel Fuentes García. 
         </p>
       </div>
     </div>

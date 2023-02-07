@@ -60,6 +60,10 @@
 }
 
 .button-menu:nth-child(6n) {
+  background: #75C481;
+}
+
+.button-menu:nth-child(7n) {
   background: #ad75c4;
 }
 

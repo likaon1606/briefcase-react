@@ -19,7 +19,7 @@ const AboutMe = () => {
       <div className='about' >
         <div className="section-about">
           <img src={pcretro} alt=''/>
-          <p>Soy un profesional proactivo, entregado al aprendizaje. Actualmente me dedico al desarrollo de sitios web como freelance, tengo mi propio sitio mexwebdesign.com, en dónde ofrezco mis servicios de desarrollo profesional. Gusto de aprender de manera autodidacta y estoy en busca de retos profesionales como programador.</p>
+          <p>Soy desarrollador Full-Stack. Actualmente me dedico al desarrollo de sitios web como freelance, tengo mi propio sitio <a href='https://mexwebdesign.com/' target='blank'>https://mexwebdesign.com/</a> en dónde ofrezco mis servicios de desarrollo profesional. Gusto de aprender de manera autodidacta y estoy en busca de retos profesionales como programador. Estoy en constante práctica con proyectos personales y así mejorar mi lógica. Pues a programar, se aprende programando.</p>
         </div>  
         <div className="broken-sheet"></div>
       </div>
