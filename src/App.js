@@ -1,14 +1,28 @@
 import './App.css';
-import AboutMe from './components/AboutMe';
-import Menu from './components/Menu';
-import Shelf from './components/Shelf';
+import { Routes, Route } from 'react-router-dom';
+import Home from './components/home/Home';
+import JavascriptProjects from './components/JavascriptProjects';
+import Menu from './components/home/Menu';
+import ReactProjects from './components/ReactProjects';
+import NodeProjects from './components/NodeProjects';
+import WordpressProjects from './components/WordpressProjects';
+import Certifications from './components/Certifications';
+import ContactMe from './components/ContactMe';
+
 
 function App() {
   return (
     <div className="App">
       <Menu />
-      <AboutMe />
-      <Shelf />
+      <Routes>
+        <Route path='/' element={ <Home /> }/>
+        <Route path='/javascript' element={ <JavascriptProjects /> } />
+        <Route path='/react' element={ <ReactProjects /> } />
+        <Route path='/node' element={ <NodeProjects /> } />
+        <Route path='/wordpress' element={ <WordpressProjects /> } />
+        <Route path='/certifications' element={ <Certifications /> } />
+        <Route path='/contact' element={ <ContactMe /> } />
+      </Routes>
     </div>
   );
 }
