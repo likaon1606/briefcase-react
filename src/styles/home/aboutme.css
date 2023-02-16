@@ -10,34 +10,6 @@
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.9);
 }
 
-.phone, .coffee, .headphones, .notebook, .broken-sheet, .shelf, .shadow-icon1, .shadow-icon2, .shadow-icon3, .shadow-icon4 {
-  position: absolute;
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-
-.phone {
-  left: -3%;
-}
-
-.coffee img{
-  width: 70%;
-  margin-top: 150%;
-  margin-left: -45%;
-}
-
-.notebook img{
-  width: 15%;
-  margin-top: 5%;
-  margin-left: 1160px;
-}
-
-.headphones img{
-  width: 80%;
-  margin-top: 190%;
-  margin-left: 340%;
-}
-
 .broken-sheet {
   background-image: url('https://demo.gridgum.com/free-templates/blogger/wp-content/themes/Blogger/images/bg_endContent.png');
   width: 100%;
@@ -98,10 +70,6 @@
     width: 100%;
   }
 
-  .phone img, .coffee img, .notebook img, .headphones img {
-    display: none;
-  }
-
   .broken-sheet {
     height: 5%;
     margin-top: -12.5%;
@@ -136,10 +104,6 @@
     width: 100%;
   }
 
-  .phone, .coffee, .notebook, .headphones {
-    display: none;
-  }
-
   .broken-sheet {
     height: 5%;
     margin-top: -12.5%;
@@ -171,10 +135,6 @@
     font-weight: 500;
     text-shadow: 0 1px 1px black;
     width: 100%;
-  }
-
-  .phone, .coffee, .notebook, .headphones {
-    display: none;
   }
 
   .broken-sheet {

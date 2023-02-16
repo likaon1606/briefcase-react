@@ -1,21 +1,13 @@
 import React from 'react';
 import '../../styles/home/aboutme.css';
-import phone from '../../assets/img/phone.png';
-import coffee from '../../assets/img/coffee.png';
-import notebook from '../../assets/img/notebook.png';
-import headphones from '../../assets/img/headphones.png';
+import Images from '../home/Images';
 import me from '../../assets/img/mia.jpg';
 
 
 const AboutMe = () => {
   return (
     <div className='principal'>
-      <div className="container">
-        <div className="phone"><img src={phone} alt='phone'/></div>
-        <div className="coffee"><img src={coffee} alt='coffee'/></div>
-        <div className="notebook"><img src={notebook} alt='notebook'/></div>
-        <div className="headphones"><img src={headphones} alt='headphones'/></div>
-      </div>
+      <Images />
       <div className='about' >
         <div className="section-about">
           <img src={me} alt='me' />

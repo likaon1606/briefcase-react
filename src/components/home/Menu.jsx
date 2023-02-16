@@ -24,7 +24,7 @@ const Menu = () => {
     top: '-10px'
   }
 
-  const noClick = {
+  let noClick = {
     position: 'relative',
     paddingTop: '20px',
     top: '0' 
@@ -36,7 +36,7 @@ const Menu = () => {
     top: '-20px'
   }
 
-  const noClickMenu = {
+  let noClickMenu = {
     position: 'absolute',
     paddingTop: '40px',
     top: '0' 
