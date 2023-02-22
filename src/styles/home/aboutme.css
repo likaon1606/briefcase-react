@@ -86,12 +86,12 @@
   .section-about img {
     position: absolute;
     width: 80%;
-    margin-top: -160%;
+    margin-top: -150%;
   }
 
   .section-about p {
     display: block;
-    margin-top: 90%;
+    margin-top: 100%;
     margin-left: 15%;
     padding-right: 5%;
     font-size: 18px;
