@@ -2,3 +2,13 @@
   margin: 0 auto;
   padding-top: 1rem;
 }
+
+.certificate {
+  text-align: center;
+}
+
+@media (max-width: 750px) {
+  .images {
+    width: 100% !important;
+  }
+}
