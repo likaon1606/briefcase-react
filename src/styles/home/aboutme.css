@@ -100,7 +100,7 @@
   }
 }
 
-@media (min-width: 391px) and (max-width: 414px) {
+@media (min-width: 391px) and (max-width: 475px) {
   .about {
     margin-top: 11%;
   }
