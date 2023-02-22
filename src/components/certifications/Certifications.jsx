@@ -1,9 +1,13 @@
-import React from 'react';
+import CarouselCertifications from "./CarouselCertifications";
+import Images from '../home/Images';
+import Shelf from '../home/Shelf';
 
 const Certifications = () => {
   return (
     <div>
-      Certifications
+      <Images />
+      <CarouselCertifications />
+      <Shelf />
     </div>
   );
 };
