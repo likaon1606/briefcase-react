@@ -78,7 +78,7 @@
 
 
 
-@media only screen and (min-width: 376px) and (max-width: 440px) {
+@media only screen and (min-width: 376px) and (max-width: 444px) {
   .about {
     margin-top: 11%;
   }
@@ -91,7 +91,7 @@
 
   .section-about p {
     display: block;
-    margin-top: 100%;
+    margin-top: 95%;
     margin-left: 15%;
     padding-right: 5%;
     font-size: 18px;
