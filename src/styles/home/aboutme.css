@@ -57,7 +57,7 @@
   .section-about img {
     position: absolute;
     width: 80%;
-    margin-top: -165%;
+    margin-top: -170%;
   }
 
   .section-about p {
@@ -78,7 +78,7 @@
 
 
 
-@media only screen and (min-width: 376px) and (max-width: 390px) {
+@media (min-width: 376px) and (max-width: 390px) {
   .about {
     margin-top: 11%;
   }
@@ -100,7 +100,7 @@
   }
 }
 
-@media only screen and (min-width: 391px) and (max-width: 414px) {
+@media (min-width: 391px) and (max-width: 414px) {
   .about {
     margin-top: 11%;
   }
