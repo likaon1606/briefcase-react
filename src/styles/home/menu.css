@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap");
 
 .head {
   display: flex;
@@ -23,7 +23,7 @@
   justify-content: center;
   font-size: 1.75rem;
   color: whitesmoke;
-  font-family: 'Courgette', cursive; 
+  font-family: "Courgette", cursive;
   text-align: center;
 }
 
@@ -65,7 +65,7 @@
 }
 
 .button-menu:nth-child(6n) {
-  background: #75C481;
+  background: #75c481;
 }
 
 .button-menu:nth-child(7n) {
@@ -82,50 +82,69 @@
 .sub-menu li {
   font-size: 1.25vw;
   display: inline;
-  padding: 1rem;  
+  padding: 1rem;
 }
 
 .button-menu {
-  margin: 2px;
-  padding-top: 20px;
+  margin: 1px;
   padding-bottom: 50px;
   display: inline;
   font-weight: 600;
   border-radius: 10%;
   cursor: pointer;
+  transform: translateX(0);
 }
 
-.sub-menu div:hover, .Link:hover {
+.button-menu::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  background: linear-gradient(
+    134deg,
+    transparent 45%,
+    #aaa 50%,
+    #ccc 60%,
+    transparent
+  );
+  transition-duration: 0.3s;
+}
+
+.button-menu:hover::before {
+  width: 40px;
+  height: 40px;
+}
+/* 
+.sub-menu div:hover,
+.Link:hover {
   color: black;
   text-shadow: 1px 1px 3px;
-  /* padding-top: -30px; */
-  /* top: 50px; */
   text-decoration-line: underline;
-}
+} */
 
-@media (max-width:360px) {
-  
+@media (max-width: 360px) {
   .head p {
     position: relative;
     margin-top: 15%;
     font-size: 1.75rem;
     margin-top: 20%;
   }
-  
+
   .photo {
     width: 15%;
     position: absolute;
     margin-top: -12%;
     z-index: -1;
   }
-  
+
   .phrase {
     margin-top: -7%;
     text-align: center;
     font-size: 1rem;
     padding: 2%;
   }
-
 
   .sub-menu {
     position: absolute;
@@ -137,7 +156,7 @@
   .sub-menu li {
     font-size: 1.25rem;
     display: block;
-    padding: 0;  
+    padding: 0;
     margin-top: -7px;
     text-align: center;
   }
@@ -175,21 +194,20 @@
     font-size: 1.75rem;
     margin-top: 20%;
   }
-  
+
   .photo {
     width: 15%;
     position: absolute;
     margin-top: -12%;
     z-index: -1;
   }
-  
+
   .phrase {
     margin-top: -7%;
     text-align: center;
     font-size: 1rem;
     padding: 2%;
   }
-
 
   .sub-menu {
     position: absolute;
@@ -201,7 +219,7 @@
   .sub-menu li {
     font-size: 1.25rem;
     display: block;
-    padding: 0;  
+    padding: 0;
     margin-top: -7px;
     text-align: center;
   }
@@ -239,21 +257,20 @@
     font-size: 1.75rem;
     margin-top: 20%;
   }
-  
+
   .photo {
     width: 15%;
     position: absolute;
     margin-top: -12%;
     z-index: -1;
   }
-  
+
   .phrase {
     margin-top: -7%;
     text-align: center;
     font-size: 1rem;
     padding: 2%;
   }
-
 
   .sub-menu {
     position: absolute;
@@ -265,7 +282,7 @@
   .sub-menu li {
     font-size: 1.25rem;
     display: block;
-    padding: 0;  
+    padding: 0;
     margin-top: -7px;
     text-align: center;
   }
@@ -295,5 +312,3 @@
     left: -1px;
   }
 }
-
-
