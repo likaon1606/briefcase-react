@@ -22,7 +22,22 @@ const Carousel = () => {
                   Portafolio hecho con HTML, CSS y Javascript. Incluí un modo
                   oscuro que es controlado con JS al igual que el carrusel, el
                   efecto de máquina de escribir y las barras del menú, el cubo
-                  es solo CSS. Para ir a la <a href="https://coruscating-llama-46f698.netlify.app/" target='blank' class="text-decoration-none fs-4">aplicación. </a> Para mirar el <a href="https://github.com/likaon1606/personalSite" target='blank' class="text-decoration-none fs-4  ">repositorio.</a>
+                  es solo CSS. Para ir a la{" "}
+                  <a
+                    href="https://coruscating-llama-46f698.netlify.app/"
+                    target="blank"
+                    class="text-decoration-none fs-4"
+                  >
+                    aplicación.{" "}
+                  </a>{" "}
+                  Para mirar el{" "}
+                  <a
+                    href="https://github.com/likaon1606/personalSite"
+                    target="blank"
+                    class="text-decoration-none fs-4  "
+                  >
+                    repositorio.
+                  </a>
                 </p>
               </div>
             </div>
@@ -38,8 +53,25 @@ const Carousel = () => {
                   matemático británico John Horton Conway en 1970. Es un juego
                   de cero jugadores, en el que su evolución es determinada por
                   un estado inicial, sin requerir intervención adicional. Por
-                  cada 3 células el organismo vive y se reproduce, 2 el organismo entra en suspensión y 4 o
-                  más células, el organismo muere por sobrepoblación de células. Las células se deben crear en horizontal y vertical. Para ir a la <a href="https://aesthetic-melba-a29721.netlify.app/" target='blank' class="text-decoration-none fs-4">aplicación. </a> Para mirar el <a href="https://github.com/likaon1606/GAMEOFLIFE" target='blank' class="text-decoration-none fs-4">repositorio.</a>
+                  cada 3 células el organismo vive y se reproduce, 2 el
+                  organismo entra en suspensión y 4 o más células, el organismo
+                  muere por sobrepoblación de células. Las células se deben
+                  crear en horizontal y vertical. Para ir a la{" "}
+                  <a
+                    href="https://aesthetic-melba-a29721.netlify.app/"
+                    target="blank"
+                    class="text-decoration-none fs-4"
+                  >
+                    aplicación.{" "}
+                  </a>{" "}
+                  Para mirar el{" "}
+                  <a
+                    href="https://github.com/likaon1606/GAMEOFLIFE"
+                    target="blank"
+                    class="text-decoration-none fs-4"
+                  >
+                    repositorio.
+                  </a>
                 </p>
               </div>
             </div>
@@ -51,7 +83,27 @@ const Carousel = () => {
                 <h4 className="mt-3">Encuentra el tesoro.</h4>
                 <hr className="w-50 border-3 text-primary" />
                 <p className="fw-semibold">
-                  Se trata de encontrar el tesoro con el menor numero de clicks, cada vez que se da click, aparece un gif dando la pista si estás frío, muy frío, congelado, tibio, caliente o quemandote. Utilicé el teorema de pitágoras para poder realizar las coordenadas y cada vez que se gana, el tesoro aparecerá en un lugar distinto. Para ir a la <a href="https://roaring-bienenstitch-e08193.netlify.app/" target='blank' class="text-decoration-none fs-4">aplicación. </a> Para mirar el <a href="https://github.com/likaon1606/MAP-THE-TREASURE" target='blank' class="text-decoration-none fs-4">repositorio.</a>
+                  Se trata de encontrar el tesoro con el menor numero de clicks,
+                  cada vez que se da click, aparece un gif dando la pista si
+                  estás frío, muy frío, congelado, tibio, caliente o quemandote.
+                  Utilicé el teorema de pitágoras para poder realizar las
+                  coordenadas y cada vez que se gana, el tesoro aparecerá en un
+                  lugar distinto. Para ir a la{" "}
+                  <a
+                    href="https://roaring-bienenstitch-e08193.netlify.app/"
+                    target="blank"
+                    class="text-decoration-none fs-4"
+                  >
+                    aplicación.{" "}
+                  </a>{" "}
+                  Para mirar el{" "}
+                  <a
+                    href="https://github.com/likaon1606/MAP-THE-TREASURE"
+                    target="blank"
+                    class="text-decoration-none fs-4"
+                  >
+                    repositorio.
+                  </a>
                 </p>
               </div>
             </div>

@@ -15,8 +15,16 @@ const CarouselWordpress = () => {
                 <h4 className="mt-3">Sitio de mis servicios</h4>
                 <hr className="w-50 border-3 text-primary" />
                 <p className="fw-semibold">
-                  Sitio donde brindo mis servicios como desarrollador freelance. Para ir al
-                   <a href="https://mexwebdesign.com/" target='blank' class="text-decoration-none fs-4"> sitio. </a>
+                  Sitio donde brindo mis servicios como desarrollador freelance.
+                  Para ir al
+                  <a
+                    href="https://mexwebdesign.com/"
+                    target="blank"
+                    class="text-decoration-none fs-4"
+                  >
+                    {" "}
+                    sitio.{" "}
+                  </a>
                 </p>
               </div>
             </div>
@@ -28,11 +36,17 @@ const CarouselWordpress = () => {
                 <h4 className="mt-3">La casa del estanque</h4>
                 <hr className="w-50 border-3 text-primary" />
                 <p className="fw-semibold">
-                  Fué mi primer página hecha como freelance. Para ir al  <a href="https://cute-starlight-f947f8.netlify.app/" target='blank' class="text-decoration-none fs-4">sitio. </a>
+                  Fué mi primer página hecha como freelance. Para ir al{" "}
+                  <a
+                    href="https://cute-starlight-f947f8.netlify.app/"
+                    target="blank"
+                    class="text-decoration-none fs-4"
+                  >
+                    sitio.{" "}
+                  </a>
                 </p>
               </div>
             </div>
-            
           </div>
           <button
             className="carousel-control-prev"

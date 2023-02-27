@@ -15,8 +15,24 @@ const CarouselReact = () => {
                 <h4 className="mt-3">Lista de Tareas</h4>
                 <hr className="w-50 border-3 text-primary" />
                 <p className="fw-semibold">
-                  Lista de tareas donde se puede agregar, tachar la tarea o eliminarla. Para ir a la
-                   <a href="https://fanciful-ganache-1232db.netlify.app/" target='blank' class="text-decoration-none fs-4"> aplicación. </a> Para mirar el <a href="https://github.com/likaon1606/Task-List" target='blank' class="text-decoration-none fs-4">repositorio.</a>
+                  Lista de tareas donde se puede agregar, tachar la tarea o
+                  eliminarla. Para ir a la
+                  <a
+                    href="https://fanciful-ganache-1232db.netlify.app/"
+                    target="blank"
+                    class="text-decoration-none fs-4"
+                  >
+                    {" "}
+                    aplicación.{" "}
+                  </a>{" "}
+                  Para mirar el{" "}
+                  <a
+                    href="https://github.com/likaon1606/Task-List"
+                    target="blank"
+                    class="text-decoration-none fs-4"
+                  >
+                    repositorio.
+                  </a>
                 </p>
               </div>
             </div>
@@ -28,11 +44,27 @@ const CarouselReact = () => {
                 <h4 className="mt-3">Buscador de pokemones</h4>
                 <hr className="w-50 border-3 text-primary" />
                 <p className="fw-semibold">
-                  Buscador de pokemones, primero colocas tu nombre para que la aplicación te salude, después puedes buscar por nombre o filtrar por tipo los pokemones. Para ir a la  <a href="https://cute-starlight-f947f8.netlify.app/" target='blank' class="text-decoration-none fs-4">aplicación. </a> Para mirar el <a href="https://github.com/likaon1606/pokeapi" target='blank' class="text-decoration-none fs-4">repositorio.</a>
+                  Buscador de pokemones, primero colocas tu nombre para que la
+                  aplicación te salude, después puedes buscar por nombre o
+                  filtrar por tipo los pokemones. Para ir a la{" "}
+                  <a
+                    href="https://cute-starlight-f947f8.netlify.app/"
+                    target="blank"
+                    class="text-decoration-none fs-4"
+                  >
+                    aplicación.{" "}
+                  </a>{" "}
+                  Para mirar el{" "}
+                  <a
+                    href="https://github.com/likaon1606/pokeapi"
+                    target="blank"
+                    class="text-decoration-none fs-4"
+                  >
+                    repositorio.
+                  </a>
                 </p>
               </div>
             </div>
-            
           </div>
           <button
             className="carousel-control-prev"

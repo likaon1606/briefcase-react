@@ -15,17 +15,18 @@
   width: 100%;
 }
 
-.carousel-control-prev, .carousel-control-next {
+.carousel-control-prev,
+.carousel-control-next {
   background: goldenrod;
   position: relative;
   display: inline;
-  margin: 1rem; 
-  border-radius: 5px; 
-  opacity: .6;
+  margin: 1rem;
+  border-radius: 5px;
+  opacity: 0.6;
 }
 
 .broken-sheet {
-  background-image: url('https://demo.gridgum.com/free-templates/blogger/wp-content/themes/Blogger/images/bg_endContent.png');
+  background-image: url("https://demo.gridgum.com/free-templates/blogger/wp-content/themes/Blogger/images/bg_endContent.png");
   width: 100%;
   height: 50%;
 }
@@ -39,5 +40,3 @@
 .section-about a {
   text-decoration: none;
 }
-
-

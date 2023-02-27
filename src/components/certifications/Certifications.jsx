@@ -1,6 +1,6 @@
 import CarouselCertifications from "./CarouselCertifications";
-import Images from '../home/Images';
-import Shelf from '../home/Shelf';
+import Images from "../home/Images";
+import Shelf from "../home/Shelf";
 
 const Certifications = () => {
   return (

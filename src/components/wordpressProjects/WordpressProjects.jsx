@@ -1,5 +1,5 @@
 import CarouselWordpress from "./CarouselWordpress";
-import Images from '../home/Images';
+import Images from "../home/Images";
 import Shelf from "../home/Shelf";
 
 const WordpressProjects = () => {

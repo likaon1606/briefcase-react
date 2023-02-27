@@ -1,4 +1,13 @@
-.phone, .coffee, .headphones, .notebook, .broken-sheet, .shelf, .shadow-icon1, .shadow-icon2, .shadow-icon3, .shadow-icon4 {
+.phone,
+.coffee,
+.headphones,
+.notebook,
+.broken-sheet,
+.shelf,
+.shadow-icon1,
+.shadow-icon2,
+.shadow-icon3,
+.shadow-icon4 {
   position: absolute;
   background-repeat: no-repeat;
   background-size: contain;
@@ -8,68 +17,59 @@
   left: -3%;
 }
 
-.coffee img{
+.coffee img {
   width: 70%;
   margin-top: 150%;
   margin-left: -45%;
 }
 
-.notebook img{
+.notebook img {
   width: 15%;
   margin-top: 5%;
   margin-left: 1160px;
 }
 
-.headphones img{
+.headphones img {
   width: 80%;
   margin-top: 190%;
   margin-left: 340%;
 }
 
-
-
 /*? ....................................................................................
 /* ? -----------------------CEL SMALL -----------------------------------------------------
 /*? ......................................................................................*/
 
-
-
-
-@media (max-width:360px){
-
-  .phone img, .coffee img, .notebook img, .headphones img {
+@media (max-width: 360px) {
+  .phone img,
+  .coffee img,
+  .notebook img,
+  .headphones img {
     display: none;
   }
-
-
 }
 
 /*? .....................................................................................
 /* ? -------------------------- CEL MEDIUM -------------------------------------------------
 /* ?.......................................................................................*/
 
-
-
 @media only screen and (min-width: 361px) and (max-width: 375px) {
- 
-  .phone, .coffee, .notebook, .headphones {
+  .phone,
+  .coffee,
+  .notebook,
+  .headphones {
     display: none;
   }
-
 }
-
 
 /* ? ......................................................................
 /*? ---------------------------- CEL HIGH ---------------------------------
 /*? .......................................................................*/
 
-
-
 @media only screen and (min-width: 376px) and (max-width: 414px) {
- 
-  .phone, .coffee, .notebook, .headphones {
+  .phone,
+  .coffee,
+  .notebook,
+  .headphones {
     display: none;
   }
-
 }
-
