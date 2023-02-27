@@ -6,6 +6,8 @@
 
 .conversation img {
   width: 10%;
+  border-radius: 90%;
+  animation: float 6s ease-in-out infinite;
 }
 
 .container-contact {
@@ -16,12 +18,14 @@
   display: flex;
   align-items: center;
   flex: start;
+  margin-left: 3%;
+  padding-bottom: 3%;
 }
 
 .img-contactme {
   width: 8%;
-  margin-left: 2%;
-  padding-bottom: 3%;
+  animation: float 6s ease-in-out infinite;
+  border-radius: 90%;
 }
 
 .contact-me h4 {
