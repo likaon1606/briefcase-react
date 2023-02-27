@@ -1,17 +1,16 @@
 .about {
   background: white;
   width: 80%;
-  background-image: url("https://demo.gridgum.com/free-templates/blogger/wp-content/themes/Blogger/images/bg_container.jpg");
+  background-image: url('https://demo.gridgum.com/free-templates/blogger/wp-content/themes/Blogger/images/bg_container.jpg');
   height: 80%;
   margin-top: 20%;
   margin: 0 auto;
-  z-index: 1;
   position: relative;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.9);
 }
 
 .broken-sheet {
-  background-image: url("https://demo.gridgum.com/free-templates/blogger/wp-content/themes/Blogger/images/bg_endContent.png");
+  background-image: url('https://demo.gridgum.com/free-templates/blogger/wp-content/themes/Blogger/images/bg_endContent.png');
   width: 100%;
   height: 50%;
 }
@@ -25,7 +24,7 @@
 .section-about img {
   margin: 10px;
   border-radius: 2%;
-  box-shadow: 0px 0px 5px 5px grey;
+  box-shadow:  0px 0px 5px 5px grey;
 }
 
 .section-about p {
@@ -39,11 +38,17 @@
   text-decoration: none;
 }
 
+
+
+
 /*? ....................................................................................
 /* ? -----------------------CEL SMALL -----------------------------------------------------
 /*? ......................................................................................*/
 
-@media (max-width: 375px) {
+
+
+
+@media (max-width:375px){
   .about {
     margin-top: 11%;
   }
@@ -65,9 +70,12 @@
   }
 }
 
+
 /* ? ......................................................................
 /*? ---------------------------- CEL HIGH ---------------------------------
 /*? .......................................................................*/
+
+
 
 @media (min-width: 376px) and (max-width: 390px) {
   .about {
@@ -112,3 +120,5 @@
     text-shadow: 0px 0px 2px black;
   }
 }
+
+
