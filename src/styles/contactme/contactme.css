@@ -1,0 +1,43 @@
+.conversation {
+  display: flex;
+  padding-top: 1rem;
+  justify-content: center;
+}
+
+.conversation img {
+  width: 10%;
+}
+
+.container-contact {
+  margin-top: 7%;
+}
+
+.contact-me {
+  display: flex;
+  align-items: center;
+  flex: start;
+}
+
+.img-contactme {
+  width: 8%;
+  margin-left: 2%;
+  padding-bottom: 3%;
+}
+
+.contact-me h4 {
+  font-size: 3rem;
+  margin-left: 2%;
+}
+
+.contact-me a {
+  text-decoration: none;
+}
+
+@media (max-width: 750px) {
+  .img-contactme {
+    width: 10%;
+  }
+  .contact-me h4 {
+    font-size: 1rem;
+  }
+}

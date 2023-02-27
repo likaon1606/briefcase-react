@@ -22,7 +22,7 @@ const Carousel = () => {
                   Portafolio hecho con HTML, CSS y Javascript. Incluí un modo
                   oscuro que es controlado con JS al igual que el carrusel, el
                   efecto de máquina de escribir y las barras del menú, el cubo
-                  es solo CSS. Para ir a la <a href="https://coruscating-llama-46f698.netlify.app/" target='blank' class="text-decoration-none fs-4">aplicación. </a> Para mirar el <a href="https://github.com/likaon1606/personalSite" target='blank' class="text-decoration-none fs-4">repositorio.</a>
+                  es solo CSS. Para ir a la <a href="https://coruscating-llama-46f698.netlify.app/" target='blank' class="text-decoration-none fs-4">aplicación. </a> Para mirar el <a href="https://github.com/likaon1606/personalSite" target='blank' class="text-decoration-none fs-4  ">repositorio.</a>
                 </p>
               </div>
             </div>
