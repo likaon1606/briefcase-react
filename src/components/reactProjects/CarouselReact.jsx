@@ -1,5 +1,6 @@
 import tasks from "../../assets/videos/Tasks.mp4";
 import pokeapi from "../../assets/videos/Pokeapi.mp4";
+import triangles from "../../assets/videos/TRIANGULOS.mp4";
 
 const CarouselReact = () => {
   return (
@@ -57,6 +58,34 @@ const CarouselReact = () => {
                   Para mirar el{" "}
                   <a
                     href="https://github.com/likaon1606/pokeapi"
+                    target="blank"
+                    class="text-decoration-none fs-4"
+                  >
+                    repositorio.
+                  </a>
+                </p>
+              </div>
+            </div>
+            <div className="carousel-item">
+              <video playsInline autoPlay muted loop controls>
+                <source src={triangles} type="video/mp4" />
+              </video>
+              <div className="m-0 row justify-content-center">
+                <h4 className="mt-3">Identificador de triángulos</h4>
+                <hr className="w-50 border-3 text-primary" />
+                <p className="fw-semibold">
+                  Identifica el tipo de triángulo, dependiendo de los valores, que en cada lado se coloquen.
+                  Triángulo Equilatero -  Isosceles - Escaleno.{" "}
+                  <a
+                    href="https://thunderous-boba-b06e6d.netlify.app/"
+                    target="blank"
+                    class="text-decoration-none fs-4"
+                  >
+                    aplicación.{" "}
+                  </a>{" "}
+                  Para mirar el{" "}
+                  <a
+                    href="https://github.com/likaon1606/identificar_triangulo"
                     target="blank"
                     class="text-decoration-none fs-4"
                   >
