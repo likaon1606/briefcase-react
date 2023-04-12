@@ -10,15 +10,15 @@ import ContactMe from "./components/contactMe/ContactMe";
 
 function App() {
   return (
-    <div className="App">
+    <div className='App'>
       <Menu />
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/javascript" element={<JavascriptProjects />} />
-        <Route path="/react" element={<ReactProjects />} />
-        <Route path="/wordpress" element={<WordpressProjects />} />
-        <Route path="/certifications" element={<Certifications />} />
-        <Route path="/contact" element={<ContactMe />} />
+        <Route path='/' element={<Home />} />
+        <Route path='/javascript' element={<JavascriptProjects />} />
+        <Route path='/react' element={<ReactProjects />} />
+        <Route path='/wordpress' element={<WordpressProjects />} />
+        <Route path='/certifications' element={<Certifications />} />
+        <Route path='/contact' element={<ContactMe />} />
       </Routes>
     </div>
   );

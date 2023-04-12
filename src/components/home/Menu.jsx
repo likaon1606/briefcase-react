@@ -41,18 +41,18 @@ const Menu = () => {
   };
 
   return (
-    <div className="menu">
-      <div className="head">
+    <div className='menu'>
+      <div className='head'>
         <p>Bienvenido A Mi Sitio</p>
       </div>
-      <div className="phrase">
+      <div className='phrase'>
         <p>
           "El cerebro no es un vaso por llenar, sino una lámpara por encender".
         </p>
       </div>
-      <div className="sub-menu">
+      <div className='sub-menu'>
         <div
-          className="menu-img"
+          className='menu-img'
           style={clickMenu ? ClickMenu : noClickMenu}
           onClick={() => {
             setClickMenu(!clickMenu);
@@ -60,9 +60,9 @@ const Menu = () => {
         >
           <img
             src={menuImg}
-            alt="menu"
-            width="100rem"
-            height="50rem"
+            alt='menu'
+            width='100rem'
+            height='50rem'
             onClick={() => {
               setIsOpen(!isOpen);
             }}
@@ -84,7 +84,7 @@ const Menu = () => {
               );
             }}
           >
-            <Link className="Link" to="/">
+            <Link className='Link' to='/'>
               <li>Inicio</li>
             </Link>
           </div>
@@ -103,7 +103,7 @@ const Menu = () => {
               );
             }}
           >
-            <Link className="Link" to="/javascript">
+            <Link className='Link' to='/javascript'>
               <li>Javascript</li>
             </Link>
           </div>
@@ -122,7 +122,7 @@ const Menu = () => {
               );
             }}
           >
-            <Link className="Link" to="/react">
+            <Link className='Link' to='/react'>
               <li>React.js</li>
             </Link>
           </div>
@@ -141,7 +141,7 @@ const Menu = () => {
               );
             }}
           >
-            <Link className="Link" to="/wordpress">
+            <Link className='Link' to='/wordpress'>
               <li>Wordpress</li>
             </Link>
           </div>
@@ -160,7 +160,7 @@ const Menu = () => {
               );
             }}
           >
-            <Link className="Link" to="/certifications">
+            <Link className='Link' to='/certifications'>
               <li>Certificaciones</li>
             </Link>
           </div>
@@ -179,7 +179,7 @@ const Menu = () => {
               );
             }}
           >
-            <Link className="Link" to="/contact">
+            <Link className='Link' to='/contact'>
               <li>Contáctame</li>
             </Link>
           </div>
