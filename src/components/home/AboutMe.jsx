@@ -5,15 +5,15 @@ import me from "../../assets/img/mia-pro.png";
 
 const AboutMe = () => {
   return (
-    <div className="principal">
+    <div className='principal'>
       <Images />
-      <div className="about">
-        <div className="section-about">
-          <img src={me} alt="me" />
+      <div className='about'>
+        <div className='section-about'>
+          <img src={me} alt='me' />
           <p>
             Soy desarrollador Full-Stack. Actualmente me dedico al desarrollo de
             sitios web como freelance, tengo mi propio sitio{" "}
-            <a href="https://mexwebdesign.com/" target="blank">
+            <a href='https://mexwebdesign.com/' target='blank'>
               https://mexwebdesign.com/
             </a>{" "}
             en dónde ofrezco mis servicios de desarrollo profesional. Gusto de
@@ -22,7 +22,7 @@ const AboutMe = () => {
             proyectos personales para así mejorar mi lógica.
           </p>
         </div>
-        <div className="broken-sheet"></div>
+        <div className='broken-sheet'></div>
       </div>
     </div>
   );

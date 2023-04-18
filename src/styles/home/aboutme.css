@@ -1,30 +1,32 @@
 .about {
   background: white;
   width: 80%;
-  background-image: url('https://demo.gridgum.com/free-templates/blogger/wp-content/themes/Blogger/images/bg_container.jpg');
-  height: 80%;
-  margin-top: 20%;
+  background-image: url("https://demo.gridgum.com/free-templates/blogger/wp-content/themes/Blogger/images/bg_container.jpg");
   margin: 0 auto;
   position: relative;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.9);
 }
 
 .broken-sheet {
-  background-image: url('https://demo.gridgum.com/free-templates/blogger/wp-content/themes/Blogger/images/bg_endContent.png');
-  width: 100%;
-  height: 50%;
+  background-image: url("https://demo.gridgum.com/free-templates/blogger/wp-content/themes/Blogger/images/bg_endContent.png");
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
-/* .section-about {
+.section-about {
+  padding: 0.25rem;
   display: flex;
-  align-items: center;
-  justify-content: center;
-} */
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 0 auto;
+}
 
 .section-about img {
   margin: 10px;
   border-radius: 2%;
-  box-shadow:  0px 0px 5px 5px grey;
+  box-shadow: 0px 0px 5px 5px grey;
+  width: 40%;
 }
 
 .section-about p {
@@ -32,93 +34,21 @@
   font-size: 30px;
   text-align: justify;
   font-weight: 500;
+  width: 50%;
 }
 
 .section-about a {
   text-decoration: none;
 }
 
-
-
-
-/*? ....................................................................................
-/* ? -----------------------CEL SMALL -----------------------------------------------------
-/*? ......................................................................................*/
-
-
-
-
-@media (max-width:375px){
-  .about {
-    margin-top: 11%;
-  }
-
+@media only screen and (max-width: 768px) {
   .section-about img {
-    position: absolute;
-    width: 80%;
-    margin-top: -170%;
+    width: 210px;
   }
 
   .section-about p {
-    display: block;
-    margin-top: 100%;
-    margin-left: 15%;
-    padding-right: 5%;
+    margin: 1rem;
     font-size: 18px;
-    font-weight: 400;
-    text-shadow: 0px 0px 2px black;
+    width: 100%;
   }
 }
-
-
-/* ? ......................................................................
-/*? ---------------------------- CEL HIGH ---------------------------------
-/*? .......................................................................*/
-
-
-
-@media (min-width: 376px) and (max-width: 390px) {
-  .about {
-    margin-top: 11%;
-  }
-
-  .section-about img {
-    position: absolute;
-    width: 80%;
-    margin-top: -170%;
-  }
-
-  .section-about p {
-    display: block;
-    margin-top: 100%;
-    margin-left: 15%;
-    padding-right: 5%;
-    font-size: 18px;
-    font-weight: 400;
-    text-shadow: 0px 0px 2px black;
-  }
-}
-
-@media (min-width: 391px) and (max-width: 475px) {
-  .about {
-    margin-top: 11%;
-  }
-
-  .section-about img {
-    position: absolute;
-    width: 80%;
-    margin-top: -150%;
-  }
-
-  .section-about p {
-    display: block;
-    margin-top: 100%;
-    margin-left: 15%;
-    padding-right: 5%;
-    font-size: 18px;
-    font-weight: 400;
-    text-shadow: 0px 0px 2px black;
-  }
-}
-
-

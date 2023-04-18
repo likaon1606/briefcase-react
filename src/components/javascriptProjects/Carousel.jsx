@@ -1,7 +1,6 @@
 import React from "react";
-import gameoflife from "../../assets/videos/Game_of_life.mp4";
-import briefcase from "../../assets/videos/portafolio.mp4";
-import treasure from "../../assets/videos/Treasure.mp4";
+import ReactPlayer from "react-player";
+
 import Images from "../home/Images";
 
 const Carousel = () => {
@@ -12,9 +11,14 @@ const Carousel = () => {
         <div id='carouselExample' className='carousel slide'>
           <div className='carousel-inner'>
             <div className='carousel-item active'>
-              <video playsInline autoPlay muted loop controls>
-                <source src={briefcase} type='video/mp4' />
-              </video>
+              <div className='react-player'>
+                <ReactPlayer
+                  url='https://youtu.be/MgYmx7WmIgg'
+                  playing={true}
+                  width='100%'
+                  height='600px'
+                />
+              </div>
               <div className='m-0 row justify-content-center'>
                 <h4 className='mt-3'>Segundo prototipo de portafolio</h4>
                 <hr className='w-50 border-3 text-primary' />
@@ -42,9 +46,14 @@ const Carousel = () => {
               </div>
             </div>
             <div className='carousel-item'>
-              <video playsInline autoPlay muted loop controls>
-                <source src={gameoflife} type='video/mp4' />
-              </video>
+              <div className='react-player'>
+                <ReactPlayer
+                  url='https://youtu.be/v9oSkkYiKcU'
+                  playing={true}
+                  width='100%'
+                  height='600px'
+                />
+              </div>
               <div className='m-0 row justify-content-center'>
                 <h4 className='mt-3'>El juego de la vida de John Conway</h4>
                 <hr className='w-50 border-3 text-primary' />
@@ -76,9 +85,14 @@ const Carousel = () => {
               </div>
             </div>
             <div className='carousel-item'>
-              <video playsInline autoPlay muted loop controls>
-                <source src={treasure} type='video/mp4' />
-              </video>
+              <div className='react-player'>
+                <ReactPlayer
+                  url='https://youtu.be/mXtp1lOqsnM'
+                  playing={true}
+                  width='100%'
+                  height='600px'
+                />
+              </div>
               <div className='m-0 row justify-content-center'>
                 <h4 className='mt-3'>Encuentra el tesoro.</h4>
                 <hr className='w-50 border-3 text-primary' />
