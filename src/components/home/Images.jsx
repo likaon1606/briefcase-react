@@ -1,5 +1,4 @@
 import "../../styles/home/images.css";
-import ReactPlayer from "react-player";
 
 const Images = () => {
   return (

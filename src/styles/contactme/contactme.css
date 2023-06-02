@@ -1,13 +1,23 @@
-.conversation {
-  display: flex;
-  padding-top: 1rem;
-  justify-content: center;
+@keyframes pulse {
+  0% {
+    transform: scale(1.05);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1.05);
+  }
 }
 
 .conversation img {
   width: 10%;
   border-radius: 90%;
-  animation: float 6s ease-in-out infinite;
+}
+
+.img-contactme {
+  width: 8%;
+  border-radius: 90%;
 }
 
 .container-contact {
@@ -22,15 +32,10 @@
   padding-bottom: 3%;
 }
 
-.img-contactme {
-  width: 8%;
-  animation: float 6s ease-in-out infinite;
-  border-radius: 90%;
-}
-
 .contact-me h4 {
   font-size: 3rem;
   margin-left: 2%;
+  animation: pulse 2s ease-in-out infinite;
 }
 
 .contact-me a {
