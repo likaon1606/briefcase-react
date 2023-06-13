@@ -32,7 +32,7 @@ const CarouselCertifications = () => {
                   <a
                     href='https://certificates.academlo.com/en/verify/24249240109488?ref'
                     target='blank'
-                    class='text-decoration-none fs-4'
+                    className='text-decoration-none fs-4'
                   >
                     {" "}
                     certificado.{" "}
@@ -50,7 +50,7 @@ const CarouselCertifications = () => {
                   <a
                     href='https://certificates.academlo.com/en/verify/15542914684766'
                     target='blank'
-                    class='text-decoration-none fs-4'
+                    className='text-decoration-none fs-4'
                   >
                     {" "}
                     certificado.{" "}
@@ -68,7 +68,7 @@ const CarouselCertifications = () => {
                   <a
                     href='https://certificates.academlo.com/en/verify/21836861079277'
                     target='blank'
-                    class='text-decoration-none fs-4'
+                    className='text-decoration-none fs-4'
                   >
                     {" "}
                     certificado.{" "}
@@ -86,7 +86,7 @@ const CarouselCertifications = () => {
                   <a
                     href='https://certificates.academlo.com/en/verify/05741999201657'
                     target='blank'
-                    class='text-decoration-none fs-4'
+                    className='text-decoration-none fs-4'
                   >
                     {" "}
                     certificado.{" "}
@@ -104,7 +104,7 @@ const CarouselCertifications = () => {
                   <a
                     href='https://community.open-bootcamp.com/user/likaon1606/certificaciones/aa1aceb6-7e58-4dd8-bc46-c591578a07fe'
                     target='blank'
-                    class='text-decoration-none fs-4'
+                    className='text-decoration-none fs-4'
                   >
                     {" "}
                     certificado.{" "}
@@ -122,7 +122,7 @@ const CarouselCertifications = () => {
                   <a
                     href='https://storage.googleapis.com/openvitae-prod/diplomas%2Ff373ec27-e518-4ec5-817a-4a011c53fd04.pdf'
                     target='blank'
-                    class='text-decoration-none fs-4'
+                    className='text-decoration-none fs-4'
                   >
                     {" "}
                     certificado.{" "}
@@ -140,7 +140,7 @@ const CarouselCertifications = () => {
                   <a
                     href='https://community.open-bootcamp.com/user/likaon1606/certificaciones/26326efc-b7b6-46b5-91c7-259f9fab7ecb'
                     target='blank'
-                    class='text-decoration-none fs-4'
+                    className='text-decoration-none fs-4'
                   >
                     {" "}
                     certificado.{" "}
@@ -158,7 +158,7 @@ const CarouselCertifications = () => {
                   <a
                     href='https://community.open-bootcamp.com/user/likaon1606/certificaciones/3eb7a25c-6465-47d2-b5b7-3e68d5701be4'
                     target='blank'
-                    class='text-decoration-none fs-4'
+                    className='text-decoration-none fs-4'
                   >
                     {" "}
                     certificado.{" "}
@@ -176,7 +176,7 @@ const CarouselCertifications = () => {
                   <a
                     href='https://community.open-bootcamp.com/user/likaon1606/certificaciones/3a7237e0-7f07-4a79-a231-1f749dba4237'
                     target='blank'
-                    class='text-decoration-none fs-4'
+                    className='text-decoration-none fs-4'
                   >
                     {" "}
                     certificado.{" "}
@@ -194,7 +194,7 @@ const CarouselCertifications = () => {
                   <a
                     href='https://community.open-bootcamp.com/user/likaon1606/certificaciones/a006a944-07fc-4603-89cd-b9f12a748da9'
                     target='blank'
-                    class='text-decoration-none fs-4'
+                    className='text-decoration-none fs-4'
                   >
                     {" "}
                     certificado.{" "}

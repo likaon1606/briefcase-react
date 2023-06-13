@@ -4,123 +4,93 @@ import ReactPlayer from "react-player";
 import Images from "../home/Images";
 
 const Carousel = () => {
+  const carouselItems = [
+    {
+      url: "https://youtu.be/MgYmx7WmIgg",
+      title: "Segundo prototipo de portafolio",
+      description:
+        "Portafolio hecho con HTML, CSS y Javascript. Incluí un modo oscuro que es controlado con JS al igual que el carrusel, el efecto de máquina de escribir y las barras del menú, el cubo es solo CSS.",
+      appLink: "https://coruscating-llama-46f698.netlify.app/",
+      repoLink: "https://github.com/likaon1606/personalSite",
+    },
+    {
+      url: "https://youtu.be/v9oSkkYiKcU",
+      title: "El juego de la vida de John Conway",
+      description:
+        "El Juego de la vida es un autómata celular diseñado por el matemático británico John Horton Conway en 1970. Es un juego de cero jugadores, en el que su evolución es determinada por un estado inicial, sin requerir intervención adicional.",
+      appLink: "https://aesthetic-melba-a29721.netlify.app/",
+      repoLink: "https://github.com/likaon1606/GAMEOFLIFE",
+    },
+    {
+      url: "https://youtu.be/mXtp1lOqsnM",
+      title: "Encuentra el tesoro",
+      description:
+        "Se trata de encontrar el tesoro con el menor número de clics, cada vez que se da clic, aparece un gif dando la pista si estás frío, muy frío, congelado, tibio, caliente o quemandote.",
+      appLink: "https://roaring-bienenstitch-e08193.netlify.app/",
+      repoLink: "https://github.com/likaon1606/MAP-THE-TREASURE",
+    },
+  ];
+
   return (
     <div>
       <Images />
       <div className='about'>
         <div id='carouselExample' className='carousel slide'>
           <div className='carousel-inner'>
-            <div className='carousel-item active'>
-              <div className='react-player'>
-                <ReactPlayer
-                  url='https://youtu.be/MgYmx7WmIgg'
-                  playing={true}
-                  width='100%'
-                  height='600px'
-                />
+            {carouselItems.map((item, index) => (
+              <div
+                className={`carousel-item ${index === 0 ? "active" : ""}`}
+                key={index}
+              >
+                <div className='react-player'>
+                  <ReactPlayer
+                    url={item.url}
+                    playing={true}
+                    width='100%'
+                    height='600px'
+                    config={{
+                      youtube: {
+                        playerVars: {
+                          modestbranding: 1,
+                          showinfo: 0,
+                          controls: 1,
+                        },
+                        preload: true,
+                        preloadIframe: true,
+                        defer: true,
+                      },
+                    }}
+                    playsinline
+                  />
+                </div>
+                <div className='m-0 row justify-content-center'>
+                  <h4 className='mt-3'>{item.title}</h4>
+                  <hr className='w-50 border-3 text-primary' />
+                  <p className='fw-semibold'>{item.description}</p>
+                  <p className='fw-semibold'>
+                    Para ir a la{" "}
+                    <a
+                      href={item.appLink}
+                      target='_blank'
+                      rel='noopener noreferrer'
+                      className='text-decoration-none fs-4'
+                    >
+                      aplicación
+                    </a>
+                    . Para mirar el{" "}
+                    <a
+                      href={item.repoLink}
+                      target='_blank'
+                      rel='noopener noreferrer'
+                      className='text-decoration-none fs-4'
+                    >
+                      repositorio
+                    </a>
+                    .
+                  </p>
+                </div>
               </div>
-              <div className='m-0 row justify-content-center'>
-                <h4 className='mt-3'>Segundo prototipo de portafolio</h4>
-                <hr className='w-50 border-3 text-primary' />
-                <p className='fw-semibold'>
-                  Portafolio hecho con HTML, CSS y Javascript. Incluí un modo
-                  oscuro que es controlado con JS al igual que el carrusel, el
-                  efecto de máquina de escribir y las barras del menú, el cubo
-                  es solo CSS. Para ir a la{" "}
-                  <a
-                    href='https://coruscating-llama-46f698.netlify.app/'
-                    target='blank'
-                    class='text-decoration-none fs-4'
-                  >
-                    aplicación.{" "}
-                  </a>{" "}
-                  Para mirar el{" "}
-                  <a
-                    href='https://github.com/likaon1606/personalSite'
-                    target='blank'
-                    class='text-decoration-none fs-4  '
-                  >
-                    repositorio.
-                  </a>
-                </p>
-              </div>
-            </div>
-            <div className='carousel-item'>
-              <div className='react-player'>
-                <ReactPlayer
-                  url='https://youtu.be/v9oSkkYiKcU'
-                  playing={true}
-                  width='100%'
-                  height='600px'
-                />
-              </div>
-              <div className='m-0 row justify-content-center'>
-                <h4 className='mt-3'>El juego de la vida de John Conway</h4>
-                <hr className='w-50 border-3 text-primary' />
-                <p className='fw-semibold'>
-                  El Juego de la vida es un autómata celular diseñado por el
-                  matemático británico John Horton Conway en 1970. Es un juego
-                  de cero jugadores, en el que su evolución es determinada por
-                  un estado inicial, sin requerir intervención adicional. Por
-                  cada 3 células el organismo vive y se reproduce, 2 el
-                  organismo entra en suspensión y 4 o más células, el organismo
-                  muere por sobrepoblación de células. Las células se deben
-                  crear en horizontal y vertical. Para ir a la{" "}
-                  <a
-                    href='https://aesthetic-melba-a29721.netlify.app/'
-                    target='blank'
-                    class='text-decoration-none fs-4'
-                  >
-                    aplicación.{" "}
-                  </a>{" "}
-                  Para mirar el{" "}
-                  <a
-                    href='https://github.com/likaon1606/GAMEOFLIFE'
-                    target='blank'
-                    class='text-decoration-none fs-4'
-                  >
-                    repositorio.
-                  </a>
-                </p>
-              </div>
-            </div>
-            <div className='carousel-item'>
-              <div className='react-player'>
-                <ReactPlayer
-                  url='https://youtu.be/mXtp1lOqsnM'
-                  playing={true}
-                  width='100%'
-                  height='600px'
-                />
-              </div>
-              <div className='m-0 row justify-content-center'>
-                <h4 className='mt-3'>Encuentra el tesoro.</h4>
-                <hr className='w-50 border-3 text-primary' />
-                <p className='fw-semibold'>
-                  Se trata de encontrar el tesoro con el menor numero de clicks,
-                  cada vez que se da click, aparece un gif dando la pista si
-                  estás frío, muy frío, congelado, tibio, caliente o quemandote.
-                  Utilicé el teorema de pitágoras para poder realizar las
-                  coordenadas y cada vez que se gana, el tesoro aparecerá en un
-                  lugar distinto. Para ir a la{" "}
-                  <a
-                    href='https://roaring-bienenstitch-e08193.netlify.app/'
-                    target='blank'
-                    class='text-decoration-none fs-4'
-                  >
-                    aplicación.{" "}
-                  </a>{" "}
-                  Para mirar el{" "}
-                  <a
-                    href='https://github.com/likaon1606/MAP-THE-TREASURE'
-                    target='blank'
-                    class='text-decoration-none fs-4'
-                  >
-                    repositorio.
-                  </a>
-                </p>
-              </div>
-            </div>
+            ))}
           </div>
           <button
             className='carousel-control-prev'

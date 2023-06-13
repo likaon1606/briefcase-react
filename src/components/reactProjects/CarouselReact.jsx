@@ -24,7 +24,7 @@ const CarouselReact = () => {
                   <a
                     href='https://fanciful-ganache-1232db.netlify.app/'
                     target='blank'
-                    class='text-decoration-none fs-4'
+                    className='text-decoration-none fs-4'
                   >
                     {" "}
                     aplicación.{" "}
@@ -33,7 +33,7 @@ const CarouselReact = () => {
                   <a
                     href='https://github.com/likaon1606/Task-List'
                     target='blank'
-                    class='text-decoration-none fs-4'
+                    className='text-decoration-none fs-4'
                   >
                     repositorio.
                   </a>
@@ -59,7 +59,7 @@ const CarouselReact = () => {
                   <a
                     href='https://cute-starlight-f947f8.netlify.app/'
                     target='blank'
-                    class='text-decoration-none fs-4'
+                    className='text-decoration-none fs-4'
                   >
                     aplicación.{" "}
                   </a>{" "}
@@ -67,7 +67,7 @@ const CarouselReact = () => {
                   <a
                     href='https://github.com/likaon1606/pokeapi'
                     target='blank'
-                    class='text-decoration-none fs-4'
+                    className='text-decoration-none fs-4'
                   >
                     repositorio.
                   </a>
@@ -93,7 +93,7 @@ const CarouselReact = () => {
                   <a
                     href='https://thunderous-boba-b06e6d.netlify.app/'
                     target='blank'
-                    class='text-decoration-none fs-4'
+                    className='text-decoration-none fs-4'
                   >
                     aplicación.{" "}
                   </a>{" "}
@@ -101,7 +101,7 @@ const CarouselReact = () => {
                   <a
                     href='https://github.com/likaon1606/identificar_triangulo'
                     target='blank'
-                    class='text-decoration-none fs-4'
+                    className='text-decoration-none fs-4'
                   >
                     repositorio.
                   </a>

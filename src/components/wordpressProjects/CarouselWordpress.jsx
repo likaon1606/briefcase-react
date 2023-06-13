@@ -24,7 +24,7 @@ const CarouselWordpress = () => {
                   <a
                     href='https://mexwebdesign.com/'
                     target='blank'
-                    class='text-decoration-none fs-4'
+                    className='text-decoration-none fs-4'
                   >
                     {" "}
                     sitio.{" "}
@@ -49,7 +49,7 @@ const CarouselWordpress = () => {
                   <a
                     href='https://cute-starlight-f947f8.netlify.app/'
                     target='blank'
-                    class='text-decoration-none fs-4'
+                    className='text-decoration-none fs-4'
                   >
                     sitio.{" "}
                   </a>
