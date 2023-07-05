@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/briefcase-react/static/css/main.a70ddf89.css",
+    "main.js": "/briefcase-react/static/js/main.c1dbefc0.js",
+    "static/js/787.5188f67f.chunk.js": "/briefcase-react/static/js/787.5188f67f.chunk.js",
+    "static/media/madera2.jpg": "/briefcase-react/static/media/madera2.ad3ab2719022311d8262.jpg",
+    "static/media/HTML_Y_CSS.jpg": "/briefcase-react/static/media/HTML_Y_CSS.2c8b70a553da66203793.jpg",
+    "static/media/DOCKER.jpg": "/briefcase-react/static/media/DOCKER.eff2065ead1558e8788e.jpg",
+    "static/media/TypeScript.jpg": "/briefcase-react/static/media/TypeScript.47f5faff64ed9474ed9b.jpg",
+    "static/media/Javascript.jpg": "/briefcase-react/static/media/Javascript.c485aeaee91814e9c4a1.jpg",
+    "static/media/GIT.jpg": "/briefcase-react/static/media/GIT.8611ad5d4c859ccdf9fd.jpg",
+    "static/media/SQL.jpg": "/briefcase-react/static/media/SQL.d4e08f311937a27f0d4d.jpg",
+    "static/media/mia-pro.png": "/briefcase-react/static/media/mia-pro.93735fc8da180371c10f.png",
+    "static/media/email.png": "/briefcase-react/static/media/email.1246be05af855a7b1fa7.png",
+    "static/media/REACT.jpg": "/briefcase-react/static/media/REACT.7eac786a5925576b6682.jpg",
+    "static/media/FULL.jpg": "/briefcase-react/static/media/FULL.aef9bf8a9a436772d85c.jpg",
+    "static/media/NODE.jpg": "/briefcase-react/static/media/NODE.feefeeb3b5b699a6937c.jpg",
+    "static/media/phone2.png": "/briefcase-react/static/media/phone2.2951e32c011b311e8dd7.png",
+    "static/media/HTML-CSS.jpg": "/briefcase-react/static/media/HTML-CSS.4c9889f945aaca9031e4.jpg",
+    "static/media/ink.png": "/briefcase-react/static/media/ink.de1495135908805e7b42.png",
+    "static/media/whatsapp.png": "/briefcase-react/static/media/whatsapp.71e47b828d15e544a562.png",
+    "static/media/conversation.png": "/briefcase-react/static/media/conversation.80f36c685651fe2acbe6.png",
+    "static/media/github.png": "/briefcase-react/static/media/github.7acde23236a5c7507398.png",
+    "index.html": "/briefcase-react/index.html",
+    "main.a70ddf89.css.map": "/briefcase-react/static/css/main.a70ddf89.css.map",
+    "main.c1dbefc0.js.map": "/briefcase-react/static/js/main.c1dbefc0.js.map",
+    "787.5188f67f.chunk.js.map": "/briefcase-react/static/js/787.5188f67f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a70ddf89.css",
+    "static/js/main.c1dbefc0.js"
+  ]
+}
