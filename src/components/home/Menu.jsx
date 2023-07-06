@@ -1,7 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
-import menuImg from "../../assets/img/menu-img.png";
 import "../../styles/home/menu.css";
+import menuImg from "../../assets/img/menu-img.png";
 
 const Menu = () => {
   const [click1, setClick1] = useState(false);
@@ -15,7 +16,7 @@ const Menu = () => {
 
   const [isOpen, setIsOpen] = useState(false);
 
-  const Click = {
+  let Click = {
     position: "relative",
     paddingTop: "30px",
     top: "-10px",
@@ -27,7 +28,7 @@ const Menu = () => {
     top: "0",
   };
 
-  const ClickMenu = {
+  let ClickMenu = {
     position: "absolute",
     marginTop: "50px",
     top: "-20px",
@@ -37,39 +38,6 @@ const Menu = () => {
     position: "absolute",
     paddingTop: "40px",
     top: "0",
-  };
-
-  const handleMenuClick = (clickNum) => {
-    setClick1(false);
-    setClick2(false);
-    setClick3(false);
-    setClick4(false);
-    setClick5(false);
-    setClick6(false);
-    setIsOpen(!isOpen);
-
-    switch (clickNum) {
-      case 1:
-        setClick1(true);
-        break;
-      case 2:
-        setClick2(true);
-        break;
-      case 3:
-        setClick3(true);
-        break;
-      case 4:
-        setClick4(true);
-        break;
-      case 5:
-        setClick5(true);
-        break;
-      case 6:
-        setClick6(true);
-        break;
-      default:
-        break;
-    }
   };
 
   return (
@@ -105,7 +73,15 @@ const Menu = () => {
             className={`button-menu ${isOpen && "open"}`}
             style={click1 ? Click : noClick}
             onClick={() => {
-              handleMenuClick(1);
+              setClick1(
+                !click1,
+                setClick2(false),
+                setClick3(false),
+                setClick4(false),
+                setClick5(false),
+                setClick6(false),
+                setIsOpen(!isOpen)
+              );
             }}
           >
             <Link className='Link' to='/'>
@@ -116,7 +92,15 @@ const Menu = () => {
             className={`button-menu ${isOpen && "open"}`}
             style={click2 ? Click : noClick}
             onClick={() => {
-              handleMenuClick(2);
+              setClick2(
+                !click2,
+                setClick1(false),
+                setClick3(false),
+                setClick4(false),
+                setClick5(false),
+                setClick6(false),
+                setIsOpen(!isOpen)
+              );
             }}
           >
             <Link className='Link' to='/javascript'>
@@ -127,7 +111,15 @@ const Menu = () => {
             className={`button-menu ${isOpen && "open"}`}
             style={click3 ? Click : noClick}
             onClick={() => {
-              handleMenuClick(3);
+              setClick3(
+                !click3,
+                setClick1(false),
+                setClick2(false),
+                setClick4(false),
+                setClick5(false),
+                setClick6(false),
+                setIsOpen(!isOpen)
+              );
             }}
           >
             <Link className='Link' to='/react'>
@@ -138,7 +130,15 @@ const Menu = () => {
             className={`button-menu ${isOpen && "open"}`}
             style={click4 ? Click : noClick}
             onClick={() => {
-              handleMenuClick(4);
+              setClick4(
+                !click4,
+                setClick1(false),
+                setClick2(false),
+                setClick3(false),
+                setClick5(false),
+                setClick6(false),
+                setIsOpen(!isOpen)
+              );
             }}
           >
             <Link className='Link' to='/wordpress'>
@@ -149,7 +149,15 @@ const Menu = () => {
             className={`button-menu ${isOpen && "open"}`}
             style={click5 ? Click : noClick}
             onClick={() => {
-              handleMenuClick(5);
+              setClick5(
+                !click5,
+                setClick1(false),
+                setClick2(false),
+                setClick3(false),
+                setClick4(false),
+                setClick6(false),
+                setIsOpen(!isOpen)
+              );
             }}
           >
             <Link className='Link' to='/certifications'>
@@ -160,7 +168,15 @@ const Menu = () => {
             className={`button-menu ${isOpen && "open"}`}
             style={click6 ? Click : noClick}
             onClick={() => {
-              handleMenuClick(6);
+              setClick6(
+                !click6,
+                setClick1(false),
+                setClick2(false),
+                setClick3(false),
+                setClick4(false),
+                setClick5(false),
+                setIsOpen(!isOpen)
+              );
             }}
           >
             <Link className='Link' to='/contact'>

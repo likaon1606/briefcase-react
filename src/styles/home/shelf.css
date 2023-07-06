@@ -26,7 +26,7 @@
 .container-shadows {
   display: flex;
   position: absolute;
-  margin-top: -6.5%;
+  margin-top: -8.5%;
   z-index: 9;
 }
 
@@ -38,8 +38,9 @@
 
 .icons {
   display: flex;
-  margin-top: -12%;
+  margin-top: -15%;
   position: absolute;
+  z-index: 4;
 }
 
 .icons img {
@@ -92,6 +93,10 @@
     width: 70px;
   }
 
+  .icons img:hover {
+    width: 70px;
+  }
+
   .copyright {
     margin-top: 10rem;
     font-size: 24px;
@@ -106,6 +111,10 @@
 
   .icons img {
     margin-left: 1rem;
+    width: 50px;
+  }
+
+  .icons img:hover {
     width: 50px;
   }
 
@@ -125,6 +134,10 @@
   }
 
   .icons img {
+    width: 40px;
+  }
+
+  .icons img:hover {
     width: 40px;
   }
 
