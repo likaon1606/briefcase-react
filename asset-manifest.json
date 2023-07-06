@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/briefcase-react/static/css/main.a70ddf89.css",
-    "main.js": "/briefcase-react/static/js/main.c1dbefc0.js",
+    "main.css": "/briefcase-react/static/css/main.f0fba6e8.css",
+    "main.js": "/briefcase-react/static/js/main.816d3fba.js",
     "static/js/787.5188f67f.chunk.js": "/briefcase-react/static/js/787.5188f67f.chunk.js",
     "static/media/madera2.jpg": "/briefcase-react/static/media/madera2.ad3ab2719022311d8262.jpg",
     "static/media/HTML_Y_CSS.jpg": "/briefcase-react/static/media/HTML_Y_CSS.2c8b70a553da66203793.jpg",
@@ -22,12 +22,12 @@
     "static/media/conversation.png": "/briefcase-react/static/media/conversation.80f36c685651fe2acbe6.png",
     "static/media/github.png": "/briefcase-react/static/media/github.7acde23236a5c7507398.png",
     "index.html": "/briefcase-react/index.html",
-    "main.a70ddf89.css.map": "/briefcase-react/static/css/main.a70ddf89.css.map",
-    "main.c1dbefc0.js.map": "/briefcase-react/static/js/main.c1dbefc0.js.map",
+    "main.f0fba6e8.css.map": "/briefcase-react/static/css/main.f0fba6e8.css.map",
+    "main.816d3fba.js.map": "/briefcase-react/static/js/main.816d3fba.js.map",
     "787.5188f67f.chunk.js.map": "/briefcase-react/static/js/787.5188f67f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a70ddf89.css",
-    "static/js/main.c1dbefc0.js"
+    "static/css/main.f0fba6e8.css",
+    "static/js/main.816d3fba.js"
   ]
 }
