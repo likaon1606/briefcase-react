@@ -140,10 +140,10 @@
     display: block;
     width: 80.2%;
     margin-left: 10%;
-    margin-top: 4%;
+    margin-top: 3.5%;
   }
   .sub-menu ul {
-    margin-top: 0.5%;
+    margin-top: 2.8%;
   }
   .sub-menu li {
     font-size: 1.25rem;
@@ -185,7 +185,11 @@
   }
 
   .sub-menu {
-    margin-top: 7.8%;
+    margin-top: 5.5%;
+  }
+
+  .sub-menu ul {
+    margin-top: 6%;
   }
 }
 
@@ -199,12 +203,20 @@
   }
 
   .sub-menu {
-    margin-top: 8.8%;
+    margin-top: 6%;
+  }
+
+  .sub-menu ul {
+    margin-top: 7%;
   }
 }
 
 @media only screen and (max-width: 320px) {
   .sub-menu {
-    margin-top: 10.5%;
+    margin-top: 8%;
+  }
+
+  .sub-menu ul {
+    margin-top: 7.4%;
   }
 }
