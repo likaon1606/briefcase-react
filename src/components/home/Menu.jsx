@@ -1,8 +1,8 @@
-import React from "react";
-import { useState } from "react";
-import { Link } from "react-router-dom";
-import "../../styles/home/menu.css";
-import menuImg from "../../assets/img/menu-img.png";
+import React from 'react';
+import { useState } from 'react';
+import { Link } from 'react-router-dom';
+import '../../styles/home/menu.css';
+import menuImg from '../../assets/img/menu-img.png';
 
 const Menu = () => {
   const [click1, setClick1] = useState(false);
@@ -17,27 +17,27 @@ const Menu = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   let Click = {
-    position: "relative",
-    paddingTop: "30px",
-    top: "-10px",
+    position: 'relative',
+    paddingTop: '30px',
+    top: '-10px',
   };
 
   const noClick = {
-    position: "relative",
-    paddingTop: "20px",
-    top: "0",
+    position: 'relative',
+    paddingTop: '20px',
+    top: '0',
   };
 
   let ClickMenu = {
-    position: "absolute",
-    marginTop: "50px",
-    top: "-20px",
+    position: 'absolute',
+    marginTop: '50px',
+    top: '-20px',
   };
 
   const noClickMenu = {
-    position: "absolute",
-    paddingTop: "40px",
-    top: "0",
+    position: 'absolute',
+    paddingTop: '40px',
+    top: '0',
   };
 
   return (
@@ -70,7 +70,7 @@ const Menu = () => {
         </div>
         <ul>
           <div
-            className={`button-menu ${isOpen && "open"}`}
+            className={`button-menu ${isOpen && 'open'}`}
             style={click1 ? Click : noClick}
             onClick={() => {
               setClick1(
@@ -80,7 +80,7 @@ const Menu = () => {
                 setClick4(false),
                 setClick5(false),
                 setClick6(false),
-                setIsOpen(!isOpen)
+                setIsOpen(isOpen)
               );
             }}
           >
@@ -89,7 +89,7 @@ const Menu = () => {
             </Link>
           </div>
           <div
-            className={`button-menu ${isOpen && "open"}`}
+            className={`button-menu ${isOpen && 'open'}`}
             style={click2 ? Click : noClick}
             onClick={() => {
               setClick2(
@@ -108,7 +108,7 @@ const Menu = () => {
             </Link>
           </div>
           <div
-            className={`button-menu ${isOpen && "open"}`}
+            className={`button-menu ${isOpen && 'open'}`}
             style={click3 ? Click : noClick}
             onClick={() => {
               setClick3(
@@ -127,7 +127,7 @@ const Menu = () => {
             </Link>
           </div>
           <div
-            className={`button-menu ${isOpen && "open"}`}
+            className={`button-menu ${isOpen && 'open'}`}
             style={click4 ? Click : noClick}
             onClick={() => {
               setClick4(
@@ -146,7 +146,7 @@ const Menu = () => {
             </Link>
           </div>
           <div
-            className={`button-menu ${isOpen && "open"}`}
+            className={`button-menu ${isOpen && 'open'}`}
             style={click5 ? Click : noClick}
             onClick={() => {
               setClick5(
@@ -165,7 +165,7 @@ const Menu = () => {
             </Link>
           </div>
           <div
-            className={`button-menu ${isOpen && "open"}`}
+            className={`button-menu ${isOpen && 'open'}`}
             style={click6 ? Click : noClick}
             onClick={() => {
               setClick6(
