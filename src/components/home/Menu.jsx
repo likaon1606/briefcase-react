@@ -5,7 +5,7 @@ import '../../styles/home/menu.css';
 import menuImg from '../../assets/img/menu-img.png';
 
 const Menu = () => {
-  const [click1, setClick1] = useState(false);
+  const [click1, setClick1] = useState(true);
   const [click2, setClick2] = useState(false);
   const [click3, setClick3] = useState(false);
   const [click4, setClick4] = useState(false);
