@@ -1,7 +1,7 @@
 .about {
   background: white;
   width: 80%;
-  background-image: url('https://demo.gridgum.com/free-templates/blogger/wp-content/themes/Blogger/images/bg_container.jpg');
+  background-image: url('../../assets/img/hoja.jpg');
   margin: 0 auto;
   position: relative;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.9);
@@ -9,7 +9,7 @@
 }
 
 .broken-sheet {
-  background-image: url('https://demo.gridgum.com/free-templates/blogger/wp-content/themes/Blogger/images/bg_endContent.png');
+  background-image: url('../../assets/img/hoja_corte.png');
   position: absolute;
   background-repeat: no-repeat;
   background-size: contain;

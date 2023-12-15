@@ -1,32 +1,25 @@
-import "../../styles/home/images.css";
+import '../../styles/home/images.css';
+
+import phone from '../../assets/img/phone.png';
+import coffee from '../../assets/img/coffe.png';
+import notebook from '../../assets/img/notebook.png';
+import headphones from '../../assets/img/headphones.png';
 
 const Images = () => {
   return (
     <div>
       <div className='container'>
         <div className='phone'>
-          <img
-            src='https://demo.gridgum.com/free-templates/blogger/wp-content/themes/Blogger/images/bg_phoneIcon.png'
-            alt='phone'
-          />
+          <img src={phone} alt='phone' />
         </div>
         <div className='coffee'>
-          <img
-            src='https://demo.gridgum.com/free-templates/blogger/wp-content/themes/Blogger/images/bg_coffeIcon.png'
-            alt='coffee'
-          />
+          <img src={coffee} alt='coffee' />
         </div>
         <div className='notebook'>
-          <img
-            src='https://demo.gridgum.com/free-templates/blogger/wp-content/themes/Blogger/images/bg_notebookIcon.png'
-            alt='notebook'
-          />
+          <img src={notebook} alt='notebook' />
         </div>
         <div className='headphones'>
-          <img
-            src='https://demo.gridgum.com/free-templates/blogger/wp-content/themes/Blogger/images/bg_headphones.png'
-            alt='headphones'
-          />
+          <img src={headphones} alt='headphones' />
         </div>
       </div>
     </div>
