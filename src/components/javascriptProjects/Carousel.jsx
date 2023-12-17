@@ -1,7 +1,6 @@
 import React, { useState, useEffect, useRef, useMemo } from 'react';
 import ReactPlayer from 'react-player';
 import Images from '../home/Images';
-import '../../styles/javascript/javascript.css';
 
 import portafolio from '../../assets/video/portafolio.mp4';
 import gamelife from '../../assets/video/Game_of_life.mp4';
@@ -76,7 +75,7 @@ const Carousel = () => {
   }, [activeIndex]);
 
   return (
-    <div>
+    <div className='principal'>
       <Images />
       <div className='about'>
         <div

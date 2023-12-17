@@ -1,6 +1,7 @@
 import React from 'react';
 import Carousel from './Carousel.jsx';
 import Shelf from '../home/Shelf';
+import '../../styles/javascript/javascript.css';
 
 const JavascriptProjects = () => {
   return (

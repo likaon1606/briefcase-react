@@ -1,18 +1,18 @@
-import html from "../../assets/img/CONSTANCIAS/HTML-CSS.jpg";
-import react from "../../assets/img/CONSTANCIAS/REACT.jpg";
-import node from "../../assets/img/CONSTANCIAS/NODE.jpg";
-import full from "../../assets/img/CONSTANCIAS/FULL.jpg";
-import docker from "../../assets/img/CONSTANCIAS/DOCKER.jpg";
-import typescript from "../../assets/img/CONSTANCIAS/TypeScript.jpg";
-import sql from "../../assets/img/CONSTANCIAS/SQL.jpg";
-import javascript from "../../assets/img/CONSTANCIAS/Javascript.jpg";
-import htmlycss from "../../assets/img/CONSTANCIAS/HTML_Y_CSS.jpg";
-import git from "../../assets/img/CONSTANCIAS/GIT.jpg";
-import "../../styles/cerfications.css/carouselCertifications.css";
+import html from '../../assets/img/CONSTANCIAS/HTML-CSS.jpg';
+import react from '../../assets/img/CONSTANCIAS/REACT.jpg';
+import node from '../../assets/img/CONSTANCIAS/NODE.jpg';
+import full from '../../assets/img/CONSTANCIAS/FULL.jpg';
+import docker from '../../assets/img/CONSTANCIAS/DOCKER.jpg';
+import typescript from '../../assets/img/CONSTANCIAS/TypeScript.jpg';
+import sql from '../../assets/img/CONSTANCIAS/SQL.jpg';
+import javascript from '../../assets/img/CONSTANCIAS/Javascript.jpg';
+import htmlycss from '../../assets/img/CONSTANCIAS/HTML_Y_CSS.jpg';
+import git from '../../assets/img/CONSTANCIAS/GIT.jpg';
+import '../../styles/cerfications.css/carouselCertifications.css';
 
 const CarouselCertifications = () => {
   return (
-    <div>
+    <div className='principal'>
       <div className='about'>
         <div id='carouselExample' className='carousel slide'>
           <div className='carousel-inner'>
@@ -34,8 +34,8 @@ const CarouselCertifications = () => {
                     target='blank'
                     className='text-decoration-none fs-4'
                   >
-                    {" "}
-                    certificado.{" "}
+                    {' '}
+                    certificado.{' '}
                   </a>
                 </p>
               </div>
@@ -52,8 +52,8 @@ const CarouselCertifications = () => {
                     target='blank'
                     className='text-decoration-none fs-4'
                   >
-                    {" "}
-                    certificado.{" "}
+                    {' '}
+                    certificado.{' '}
                   </a>
                 </p>
               </div>
@@ -70,8 +70,8 @@ const CarouselCertifications = () => {
                     target='blank'
                     className='text-decoration-none fs-4'
                   >
-                    {" "}
-                    certificado.{" "}
+                    {' '}
+                    certificado.{' '}
                   </a>
                 </p>
               </div>
@@ -88,8 +88,8 @@ const CarouselCertifications = () => {
                     target='blank'
                     className='text-decoration-none fs-4'
                   >
-                    {" "}
-                    certificado.{" "}
+                    {' '}
+                    certificado.{' '}
                   </a>
                 </p>
               </div>
@@ -106,8 +106,8 @@ const CarouselCertifications = () => {
                     target='blank'
                     className='text-decoration-none fs-4'
                   >
-                    {" "}
-                    certificado.{" "}
+                    {' '}
+                    certificado.{' '}
                   </a>
                 </p>
               </div>
@@ -124,8 +124,8 @@ const CarouselCertifications = () => {
                     target='blank'
                     className='text-decoration-none fs-4'
                   >
-                    {" "}
-                    certificado.{" "}
+                    {' '}
+                    certificado.{' '}
                   </a>
                 </p>
               </div>
@@ -142,8 +142,8 @@ const CarouselCertifications = () => {
                     target='blank'
                     className='text-decoration-none fs-4'
                   >
-                    {" "}
-                    certificado.{" "}
+                    {' '}
+                    certificado.{' '}
                   </a>
                 </p>
               </div>
@@ -160,8 +160,8 @@ const CarouselCertifications = () => {
                     target='blank'
                     className='text-decoration-none fs-4'
                   >
-                    {" "}
-                    certificado.{" "}
+                    {' '}
+                    certificado.{' '}
                   </a>
                 </p>
               </div>
@@ -178,8 +178,8 @@ const CarouselCertifications = () => {
                     target='blank'
                     className='text-decoration-none fs-4'
                   >
-                    {" "}
-                    certificado.{" "}
+                    {' '}
+                    certificado.{' '}
                   </a>
                 </p>
               </div>
@@ -196,8 +196,8 @@ const CarouselCertifications = () => {
                     target='blank'
                     className='text-decoration-none fs-4'
                   >
-                    {" "}
-                    certificado.{" "}
+                    {' '}
+                    certificado.{' '}
                   </a>
                 </p>
               </div>

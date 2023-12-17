@@ -9,10 +9,13 @@
 }
 
 .broken-sheet {
+  width: 100%;
+  height: 100%;
   background-image: url('../../assets/img/hoja_corte.png');
   position: absolute;
   background-repeat: no-repeat;
   background-size: contain;
+  content: '';
 }
 
 .section-about {

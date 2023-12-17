@@ -2,7 +2,7 @@ import ReactPlayer from 'react-player';
 
 const CarouselReact = () => {
   return (
-    <div>
+    <div className='principal'>
       <div className='about'>
         <div id='carouselExample' className='carousel slide'>
           <div className='carousel-inner'>

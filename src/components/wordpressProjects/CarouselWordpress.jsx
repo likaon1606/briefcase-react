@@ -1,8 +1,8 @@
-import ReactPlayer from "react-player";
+import ReactPlayer from 'react-player';
 
 const CarouselWordpress = () => {
   return (
-    <div>
+    <div className='principal'>
       <div className='about'>
         <div id='carouselExample' className='carousel slide'>
           <div className='carousel-inner'>
@@ -26,8 +26,8 @@ const CarouselWordpress = () => {
                     target='blank'
                     className='text-decoration-none fs-4'
                   >
-                    {" "}
-                    sitio.{" "}
+                    {' '}
+                    sitio.{' '}
                   </a>
                 </p>
               </div>
@@ -45,13 +45,13 @@ const CarouselWordpress = () => {
                 <h4 className='mt-3'>La casa del estanque</h4>
                 <hr className='w-50 border-3 text-primary' />
                 <p className='fw-semibold'>
-                  Fué mi primer página hecha como freelance. Para ir al{" "}
+                  Fué mi primer página hecha como freelance. Para ir al{' '}
                   <a
                     href='https://cute-starlight-f947f8.netlify.app/'
                     target='blank'
                     className='text-decoration-none fs-4'
                   >
-                    sitio.{" "}
+                    sitio.{' '}
                   </a>
                 </p>
               </div>
