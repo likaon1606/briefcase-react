@@ -1,16 +1,28 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import '../../styles/home/menu.css';
 import menuImg from '../../assets/img/menu-img.png';
 
 const Menu = () => {
-  const [click1, setClick1] = useState(true);
-  const [click2, setClick2] = useState(false);
-  const [click3, setClick3] = useState(false);
-  const [click4, setClick4] = useState(false);
-  const [click5, setClick5] = useState(false);
-  const [click6, setClick6] = useState(false);
+  const [click1, setClick1] = useState(
+    JSON.parse(localStorage.getItem('click1')) || false
+  );
+  const [click2, setClick2] = useState(
+    JSON.parse(localStorage.getItem('click2')) || false
+  );
+  const [click3, setClick3] = useState(
+    JSON.parse(localStorage.getItem('click3')) || false
+  );
+  const [click4, setClick4] = useState(
+    JSON.parse(localStorage.getItem('click4')) || false
+  );
+  const [click5, setClick5] = useState(
+    JSON.parse(localStorage.getItem('click5')) || false
+  );
+  const [click6, setClick6] = useState(
+    JSON.parse(localStorage.getItem('click6')) || false
+  );
 
   const [clickMenu, setClickMenu] = useState(false);
 
@@ -39,6 +51,15 @@ const Menu = () => {
     paddingTop: '40px',
     top: '0',
   };
+
+  useEffect(() => {
+    localStorage.setItem('click1', JSON.stringify(click1));
+    localStorage.setItem('click2', JSON.stringify(click2));
+    localStorage.setItem('click3', JSON.stringify(click3));
+    localStorage.setItem('click4', JSON.stringify(click4));
+    localStorage.setItem('click5', JSON.stringify(click5));
+    localStorage.setItem('click6', JSON.stringify(click6));
+  }, [click1, click2, click3, click4, click5, click6]);
 
   return (
     <div className='menu'>

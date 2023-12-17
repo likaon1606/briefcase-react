@@ -1,4 +1,4 @@
-import ReactPlayer from "react-player";
+import ReactPlayer from 'react-player';
 
 const CarouselReact = () => {
   return (
@@ -26,10 +26,10 @@ const CarouselReact = () => {
                     target='blank'
                     className='text-decoration-none fs-4'
                   >
-                    {" "}
-                    aplicación.{" "}
-                  </a>{" "}
-                  Para mirar el{" "}
+                    {' '}
+                    aplicación.{' '}
+                  </a>{' '}
+                  Para mirar el{' '}
                   <a
                     href='https://github.com/likaon1606/Task-List'
                     target='blank'
@@ -55,15 +55,15 @@ const CarouselReact = () => {
                 <p className='fw-semibold'>
                   Buscador de pokemones, primero colocas tu nombre para que la
                   aplicación te salude, después puedes buscar por nombre o
-                  filtrar por tipo los pokemones. Para ir a la{" "}
+                  filtrar por tipo los pokemones. Para ir a la{' '}
                   <a
                     href='https://cute-starlight-f947f8.netlify.app/'
                     target='blank'
                     className='text-decoration-none fs-4'
                   >
-                    aplicación.{" "}
-                  </a>{" "}
-                  Para mirar el{" "}
+                    aplicación.{' '}
+                  </a>{' '}
+                  Para mirar el{' '}
                   <a
                     href='https://github.com/likaon1606/pokeapi'
                     target='blank'
@@ -89,15 +89,15 @@ const CarouselReact = () => {
                 <p className='fw-semibold'>
                   Identifica el tipo de triángulo, dependiendo de los valores,
                   que en cada lado se coloquen. Triángulo Equilatero - Isosceles
-                  - Escaleno.{" "}
+                  - Escaleno.{' '}
                   <a
                     href='https://thunderous-boba-b06e6d.netlify.app/'
                     target='blank'
                     className='text-decoration-none fs-4'
                   >
-                    aplicación.{" "}
-                  </a>{" "}
-                  Para mirar el{" "}
+                    aplicación.{' '}
+                  </a>{' '}
+                  Para mirar el{' '}
                   <a
                     href='https://github.com/likaon1606/identificar_triangulo'
                     target='blank'
