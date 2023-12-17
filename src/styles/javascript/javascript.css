@@ -2,12 +2,8 @@
   width: 100%;
 }
 
-.video {
-  height: 600px;
-}
-
 @media (max-width: 768px) {
   .video {
-    height: auto;
+    height: 300px;
   }
 }
