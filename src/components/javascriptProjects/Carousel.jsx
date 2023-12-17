@@ -78,7 +78,7 @@ const Carousel = () => {
     <div>
       <Images />
       <div className='about'>
-        <div className='video-slide'>
+        <div className='video-container'>
           <div className='video'>
             <ReactPlayer
               url={carouselItems[activeIndex].url}
@@ -91,51 +91,51 @@ const Carousel = () => {
               progressInterval={1000}
             />
           </div>
-          <div className='video-info'>
-            <div className='btns text-center'>
-              <button
-                className='btn btn-outline-secondary m-1  btn-sm btn-block'
-                onClick={handlePrevious}
-              >
-                Anterior
-              </button>
-              <button
-                className='btn btn-outline-primary m-1  btn-sm btn-block'
-                onClick={handleNext}
-              >
-                Siguiente
-              </button>
-            </div>
-            <div className='m-2 p-2 justify-content-center'>
-              <h4>{carouselItems[activeIndex].title}</h4>
-              <hr className='border border-primary border-2 opacity-75 px-2' />
 
-              <p className='fw-semibold'>
-                {carouselItems[activeIndex].description}
-              </p>
-              <p className='fw-semibold'>
-                Para ir a la{' '}
-                <a
-                  className='text-decoration-none fs-4'
-                  href={carouselItems[activeIndex].appLink}
-                  target='_blank'
-                  rel='noopener noreferrer'
-                >
-                  aplicación
-                </a>
-                . Para mirar el{' '}
-                <a
-                  className='text-decoration-none fs-4'
-                  href={carouselItems[activeIndex].repoLink}
-                  target='_blank'
-                  rel='noopener noreferrer'
-                >
-                  repositorio
-                </a>
-                .
-              </p>
-            </div>
+          <div className='btns text-center'>
+            <button
+              className='btn btn-outline-secondary m-1  btn-sm btn-block'
+              onClick={handlePrevious}
+            >
+              Anterior
+            </button>
+            <button
+              className='btn btn-outline-primary m-1  btn-sm btn-block'
+              onClick={handleNext}
+            >
+              Siguiente
+            </button>
           </div>
+        </div>
+
+        <div className='m-2 p-2 justify-content-center'>
+          <h4>{carouselItems[activeIndex].title}</h4>
+          {/* <hr className='border border-primary border-1 opacity-75 px-2' /> */}
+
+          <p className='fw-semibold'>
+            {carouselItems[activeIndex].description}
+          </p>
+          <p className='fw-semibold'>
+            Para ir a la{' '}
+            <a
+              className='text-decoration-none fs-4'
+              href={carouselItems[activeIndex].appLink}
+              target='_blank'
+              rel='noopener noreferrer'
+            >
+              aplicación
+            </a>
+            . Para mirar el{' '}
+            <a
+              className='text-decoration-none fs-4'
+              href={carouselItems[activeIndex].repoLink}
+              target='_blank'
+              rel='noopener noreferrer'
+            >
+              repositorio
+            </a>
+            .
+          </p>
         </div>
       </div>
     </div>
