@@ -27,26 +27,28 @@
   display: flex;
   position: absolute;
   margin-top: -5.8%;
-  z-index: 9;
+  z-index: 5;
 }
 
 .container-shadows img {
   margin-left: 2rem;
   width: 70px;
   height: 15px;
+  z-index: 5;
 }
 
 .icons {
   display: flex;
   margin-top: -15%;
   position: absolute;
-  z-index: 4;
+  z-index: 5;
 }
 
 .icons img {
   margin-left: 2rem;
   width: 70px;
   border-radius: 50%;
+  z-index: 2;
   animation: float 6s ease-in-out infinite;
 }
 
@@ -62,7 +64,8 @@
   color: darkgrey;
   font-weight: 600;
   font-size: 20px;
-  z-index: 9;
+  z-index: 2;
+  text-align: center;
 }
 
 @media only screen and (max-width: 768px) {
@@ -86,6 +89,7 @@
 
   .icons {
     margin-top: -39%;
+    z-index: 4;
   }
 
   .icons img {
@@ -93,12 +97,15 @@
     width: 70px;
   }
 
+  .container-shadows {
+    z-index: 2;
+  }
+
   .icons img:hover {
     width: 70px;
   }
 
   .copyright {
-    margin-top: 10rem;
     font-size: 24px;
   }
 }
@@ -120,7 +127,6 @@
 
   .copyright {
     text-align: center;
-    padding: 1rem;
     font-size: 20px;
   }
 }

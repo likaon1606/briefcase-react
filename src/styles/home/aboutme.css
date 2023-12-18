@@ -5,7 +5,7 @@
   margin: 0 auto;
   position: relative;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.9);
-  z-index: 2;
+  z-index: 5;
 }
 
 .broken-sheet {
@@ -46,6 +46,9 @@
 }
 
 @media only screen and (max-width: 768px) {
+  .about {
+    z-index: 4;
+  }
   .principal {
     margin-top: 50px;
   }

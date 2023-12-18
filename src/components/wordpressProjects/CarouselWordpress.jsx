@@ -1,86 +1,127 @@
+import React, { useState, useEffect, useRef, useMemo } from 'react';
 import ReactPlayer from 'react-player';
 
+import estanque from '../../assets/video/Estanque.mp4';
+import mwd from '../../assets/video/MWD.mp4';
+
 const CarouselWordpress = () => {
+  const [activeIndex, setActiveIndex] = useState(0);
+  const playerRef = useRef(null);
+
+  const handleVideoEnded = () => {
+    setActiveIndex((prevIndex) => (prevIndex + 1) % carouselItems.length);
+  };
+
+  const handlePrevious = () => {
+    setActiveIndex((prevIndex) =>
+      prevIndex === 0 ? carouselItems.length - 1 : prevIndex - 1
+    );
+  };
+
+  const handleNext = () => {
+    setActiveIndex((prevIndex) => (prevIndex + 1) % carouselItems.length);
+  };
+
+  const carouselItems = useMemo(
+    () => [
+      {
+        url: estanque,
+        title: 'Sitio de Biomedicina',
+        description: 'Sitio de Biomedicina con estilos en WORDPRESS',
+        appLink: 'https://biomedicinamolecular.com/',
+      },
+      {
+        url: mwd,
+        title: 'Sitio de servicios digitales',
+        description:
+          'Sitio donde se ofrecen servicios de diseño web y marketing digital',
+        appLink: 'https://mexwebdesign.com/',
+      },
+    ],
+    [] // Dependencias vacías, se ejecutará una sola vez al montar el componente
+  );
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      if (
+        playerRef.current &&
+        playerRef.current.getCurrentTime() >=
+          playerRef.current.getDuration() - 1
+      ) {
+        setActiveIndex((prevIndex) => (prevIndex + 1) % carouselItems.length);
+      }
+    }, 1000);
+
+    return () => clearInterval(interval);
+  }, [activeIndex, carouselItems]);
+
+  useEffect(() => {
+    if (playerRef.current) {
+      playerRef.current.seekTo(0); // Reiniciar el video al cambiar de índice
+    }
+  }, [activeIndex]);
+
   return (
     <div className='principal'>
       <div className='about'>
-        <div id='carouselExample' className='carousel slide'>
+        <div
+          id='carouselExampleControls'
+          className='carousel slide'
+          data-bs-ride='carousel'
+        >
           <div className='carousel-inner'>
-            <div className='carousel-item active'>
-              <div className='react-player'>
+            {carouselItems.map((item, index) => (
+              <div
+                className={`carousel-item ${
+                  index === activeIndex ? 'active' : ''
+                }`}
+                key={index}
+              >
                 <ReactPlayer
-                  url='https://youtu.be/qccv2qLuHnw'
-                  playing={true}
+                  ref={playerRef}
+                  url={item.url}
+                  playing={index === activeIndex}
+                  loop={true}
                   width='100%'
-                  height='600px'
+                  height='100%'
+                  onEnded={handleVideoEnded}
+                  controls={true}
+                  progressInterval={1000}
+                  style={{ display: index === activeIndex ? 'block' : 'none' }}
                 />
-              </div>
-              <div className='m-0 row justify-content-center'>
-                <h4 className='mt-3'>Sitio de mis servicios</h4>
-                <hr className='w-50 border-3 text-primary' />
-                <p className='fw-semibold'>
-                  Sitio donde brindo mis servicios como desarrollador freelance.
-                  Para ir al
-                  <a
-                    href='https://mexwebdesign.com/'
-                    target='blank'
-                    className='text-decoration-none fs-4'
+                <div className='btns text-center'>
+                  <button
+                    className='btn btn-outline-secondary m-1 btn-sm btn-block'
+                    onClick={handlePrevious}
                   >
-                    {' '}
-                    sitio.{' '}
-                  </a>
-                </p>
-              </div>
-            </div>
-            <div className='carousel-item'>
-              <div className='react-player'>
-                <ReactPlayer
-                  url='https://youtu.be/9AHT3epQAdQ'
-                  playing={true}
-                  width='100%'
-                  height='600px'
-                />
-              </div>
-              <div className='m-0 row justify-content-center'>
-                <h4 className='mt-3'>La casa del estanque</h4>
-                <hr className='w-50 border-3 text-primary' />
-                <p className='fw-semibold'>
-                  Fué mi primer página hecha como freelance. Para ir al{' '}
-                  <a
-                    href='https://cute-starlight-f947f8.netlify.app/'
-                    target='blank'
-                    className='text-decoration-none fs-4'
+                    Anterior
+                  </button>
+                  <button
+                    className='btn btn-outline-primary m-1 btn-sm btn-block'
+                    onClick={handleNext}
                   >
-                    sitio.{' '}
-                  </a>
-                </p>
+                    Siguiente
+                  </button>
+                </div>
+                <div className='m-2 p-2 justify-content-center'>
+                  <h4>{item.title}</h4>
+                  <p className='fw-semibold'>{item.description}</p>
+                  <p className='fw-semibold'>
+                    Para ir a la{' '}
+                    <a
+                      className='text-decoration-none fs-4'
+                      href={item.appLink}
+                      target='_blank'
+                      rel='noopener noreferrer'
+                    >
+                      aplicación
+                    </a>
+                    .
+                  </p>
+                </div>
               </div>
-            </div>
+            ))}
           </div>
-          <button
-            className='carousel-control-prev'
-            type='button'
-            data-bs-target='#carouselExample'
-            data-bs-slide='prev'
-          >
-            <span
-              className='carousel-control-prev-icon'
-              aria-hidden='true'
-            ></span>
-            <span className='visually-hidden'>Previous</span>
-          </button>
-          <button
-            className='carousel-control-next'
-            type='button'
-            data-bs-target='#carouselExample'
-            data-bs-slide='next'
-          >
-            <span
-              className='carousel-control-next-icon'
-              aria-hidden='true'
-            ></span>
-            <span className='visually-hidden'>Next</span>
-          </button>
         </div>
       </div>
     </div>

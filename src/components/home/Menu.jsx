@@ -80,7 +80,7 @@ const Menu = () => {
                 setClick4(false),
                 setClick5(false),
                 setClick6(false),
-                setIsOpen(isOpen)
+                setIsOpen(!isOpen)
               );
             }}
           >

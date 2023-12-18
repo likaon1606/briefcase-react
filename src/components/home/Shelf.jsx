@@ -1,10 +1,10 @@
-import React from "react";
-import "../../styles/home/shelf.css";
+import React from 'react';
+import '../../styles/home/shelf.css';
 
-import linkedin from "../../assets/img/ink.png";
-import mwd from "../../assets/img/MWD.png";
-import git from "../../assets/img/github.png";
-import whats from "../../assets/img/whatsapp.png";
+import linkedin from '../../assets/img/ink.png';
+import mwd from '../../assets/img/MWD.png';
+import git from '../../assets/img/github.png';
+import whats from '../../assets/img/whatsapp.png';
 
 const Shelf = () => {
   return (
@@ -65,7 +65,10 @@ const Shelf = () => {
       </div>
 
       <div className='copyright'>
-        <p>®Todos los derechos reservados 2023. Developer by A.F.G. </p>
+        <p>
+          ®Todos los derechos reservados 2023.{' '}
+          <p>Sitio desarrollado por Ariel.F.G.</p>{' '}
+        </p>
       </div>
     </div>
   );

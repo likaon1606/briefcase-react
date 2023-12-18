@@ -1,4 +1,4 @@
-@keyframes pulse {
+/* @keyframes pulse {
   0% {
     transform: scale(1.05);
   }
@@ -8,20 +8,20 @@
   100% {
     transform: scale(1.05);
   }
-}
+} */
 
 .conversation img {
+  display: flex;
+  margin: 0 auto;
+  padding-top: 20px;
   width: 10%;
   border-radius: 90%;
+  margin-bottom: 5%;
 }
 
 .img-contactme {
-  width: 8%;
+  width: 7%;
   border-radius: 90%;
-}
-
-.container-contact {
-  margin-top: 7%;
 }
 
 .contact-me {
@@ -29,24 +29,52 @@
   align-items: center;
   flex: start;
   margin-left: 3%;
-  padding-bottom: 3%;
+  padding-bottom: 2%;
 }
 
 .contact-me h4 {
   font-size: 3rem;
   margin-left: 2%;
-  animation: pulse 2s ease-in-out infinite;
+  /* animation: pulse 2s ease-in-out infinite; */
 }
 
 .contact-me a {
   text-decoration: none;
+  color: grey;
 }
 
-@media (max-width: 750px) {
+@media (max-width: 768px) {
   .img-contactme {
     width: 10%;
   }
   .contact-me h4 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 425px) {
+  .img-contactme {
+    width: 30px;
+  }
+  .contact-me h4 {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .img-contactme {
+    width: 25px;
+  }
+  .contact-me h4 {
     font-size: 1rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .img-contactme {
+    width: 20px;
+  }
+  .contact-me h4 {
+    font-size: 0.95rem;
   }
 }

@@ -11,10 +11,10 @@ const ContactMe = () => {
     <div className='principal'>
       <Images />
       <div className='about'>
-        <div className='conversation'>
-          <img src={conversation} alt='conversation' />
-        </div>
         <div className='container-contact'>
+          <div className='conversation'>
+            <img src={conversation} alt='conversation' />
+          </div>
           <div className='contact-me'>
             <img src={phone} alt='email' className='img-contactme' />
             <h4>
@@ -24,8 +24,8 @@ const ContactMe = () => {
           <div className='contact-me'>
             <img src={email} alt='email' className='img-contactme' />
             <h4>
-              <a href='mailto:ariel.fg@mexwebdesign.com' target='blank'>
-                ariel.fg@mexwebdesign.com
+              <a href='mailto:ariel.fuentesgarcia@gmail.com' target='blank'>
+                ariel.fuentesgarcia@gmail.com
               </a>
             </h4>
           </div>
