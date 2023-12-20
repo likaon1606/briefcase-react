@@ -1,77 +1,69 @@
-import React, { useState, useEffect, useRef, useMemo } from 'react';
-import ReactPlayer from 'react-player';
+import React, { useState, useMemo } from 'react';
 
-import tasks from '../../assets/video/Tasks.mp4';
-import surgencia from '../../assets/video/Pokeapi.mp4';
-import triangule from '../../assets/video/TRIANGULOS.mp4';
+import surgencia from '../../assets/img/Projects/surgencia.jpg';
+import ahorcado from '../../assets/img/Projects/Ahorcado.jpg';
+import memory from '../../assets/img/Projects/memorygame.jpg';
+import tasklist from '../../assets/img/Projects/tasklist.jpg';
+
+import '../../styles/cerfications.css/carouselCertifications.css';
 
 const CarouselReact = () => {
   const [activeIndex, setActiveIndex] = useState(0);
-  const playerRef = useRef(null);
-
-  const handleVideoEnded = () => {
-    setActiveIndex((prevIndex) => (prevIndex + 1) % carouselItems.length);
-  };
 
   const handlePrevious = () => {
     setActiveIndex((prevIndex) =>
-      prevIndex === 0 ? carouselItems.length - 1 : prevIndex - 1
+      prevIndex === 0 ? items.length - 1 : prevIndex - 1
     );
   };
 
   const handleNext = () => {
-    setActiveIndex((prevIndex) => (prevIndex + 1) % carouselItems.length);
+    setActiveIndex((prevIndex) => (prevIndex + 1) % items.length);
   };
 
-  const carouselItems = useMemo(
+  const items = useMemo(
     () => [
       {
-        url: tasks,
-        title: 'Tareas por hacer',
-        description:
-          'Uso de CRUD en React.js, donde se puede crear, eliminar, o descartar la tarea, utilizando renderizado condicional.',
-        appLink: 'https://fanciful-ganache-1232db.netlify.app/',
-        repoLink: 'https://github.com/likaon1606/Tasks-List-Openbootcamp',
-      },
-      {
         url: surgencia,
-        title: 'Sitio para ONG Surgencia',
+        title: 'Sitio para reportes medio ambientales',
+        technologies:
+          'Tecnologías: En el Front En - React.js, Bootstrap, zustand, protección de rutas. En el Back End - JWT, pg, swagger para la documentación, sequelize.',
         description:
-          'Sitio oficial de la ONG Surgencia. Blog oficial para la vigilancia de desastres ecológicos, en donde se reportan y se vigila la costera de Chile. El usuario puede mapear, además de subir fotos y los adminstradores entran a un apartado para validar y publicar el artículo subido por el usuario',
+          'Blog para el rescate de las costera, en donde el usuario puede subir fotos, escribir y pinchar el lugar donde ocurrió un problema medio ambiental y se quedará registrado en el mapa. Por el lado del administrador, hay una sección especial donde se aprobarán los reportes que suben los seguidores o usuarios que deseen interactuar con el sitio.',
         appLink: 'https://surgenciaong.vercel.app/',
         repoLink: 'https://github.com/likaon1606/surgencia',
       },
       {
-        url: triangule,
-        title: 'Identificador de triángulos',
+        url: ahorcado,
+        title: 'El juego del Ahorcado',
+        technologies:
+          'React.js + Vite, useContext para el manejo de estados, renderizado condicional. ',
         description:
-          'Identifica el tipo de triángulo, dependiendo de los valores, que en cada lado se coloquen. Triángulo Equilatero - Isosceles - Escaleno.',
-        appLink: 'https://thunderous-boba-b06e6d.netlify.app/',
-        repoLink: 'https://github.com/likaon1606/identificar_triangulo',
+          'Juego donde hay una serie de preguntas y se debe adivinar la palabra. Aparecen algunos guiones con la longitud de la respuesta correcta, si la letra que se elige está en la palabra, sustituirá los guiones de la posición y aparecerá en ver, no se podrá elegir otra vez la misma letra, si se falla, la letra elegida se torna roja. Se tienen 5 intentos.',
+        appLink: 'https://illustrious-longma-fa9493.netlify.app/',
+        repoLink: 'https://github.com/likaon1606/Ahorcado',
+      },
+      {
+        url: memory,
+        title: 'Juego de memoria',
+        technologies:
+          'Tecnologías: React.js + Vite, renderizado condicional, uso de props.',
+        description:
+          'Juego donde se debe encontrar las parejas de imagenes iguales, si no es la pareja, las cartas se voltean, no se pueden elegir más de 2 cartas al mismo tiempo, una vez encontradas todas, se gana y s epuede repetir el juego.',
+        appLink: 'https://likaon1606.github.io/memory_game/',
+        repoLink: 'https://github.com/likaon1606/memory_game',
+      },
+      {
+        url: tasklist,
+        title: 'Lista de tareas por hacer',
+        technologies: 'Tecnologías: React.js, Bootstrap, Formik .',
+        description:
+          'Aplicación donde se puede crear, eliminar, o descartar la tarea, utilizando renderizado condicional.',
+        appLink: 'https://fanciful-ganache-1232db.netlify.app/',
+        repoLink: 'https://github.com/likaon1606/taskListFormik',
       },
     ],
-    [] // Dependencias vacías, se ejecutará una sola vez al montar el componente
+    []
   );
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      if (
-        playerRef.current &&
-        playerRef.current.getCurrentTime() >=
-          playerRef.current.getDuration() - 1
-      ) {
-        setActiveIndex((prevIndex) => (prevIndex + 1) % carouselItems.length);
-      }
-    }, 1000);
-
-    return () => clearInterval(interval);
-  }, [activeIndex, carouselItems]);
-
-  useEffect(() => {
-    if (playerRef.current) {
-      playerRef.current.seekTo(0); // Reiniciar el video al cambiar de índice
-    }
-  }, [activeIndex]);
 
   return (
     <div className='principal'>
@@ -82,25 +74,14 @@ const CarouselReact = () => {
           data-bs-ride='carousel'
         >
           <div className='carousel-inner'>
-            {carouselItems.map((item, index) => (
+            {items.map((item, index) => (
               <div
                 className={`carousel-item ${
                   index === activeIndex ? 'active' : ''
                 }`}
                 key={index}
               >
-                <ReactPlayer
-                  ref={playerRef}
-                  url={item.url}
-                  playing={index === activeIndex}
-                  loop={true}
-                  width='100%'
-                  height='100%'
-                  onEnded={handleVideoEnded}
-                  controls={true}
-                  progressInterval={1000}
-                  style={{ display: index === activeIndex ? 'block' : 'none' }}
-                />
+                <img src={item.url} className='d-block' alt={`item ${index}`} />
                 <div className='btns text-center'>
                   <button
                     className='btn btn-outline-secondary m-1 btn-sm btn-block'
@@ -117,7 +98,9 @@ const CarouselReact = () => {
                 </div>
                 <div className='m-2 p-2 justify-content-center'>
                   <h4>{item.title}</h4>
-                  <p className='fw-semibold'>{item.description}</p>
+                  <p className='fw-semibold'>
+                    <strong>{item.technologies}</strong> {item.description}
+                  </p>
                   <p className='fw-semibold'>
                     Para ir a la{' '}
                     <a
@@ -126,18 +109,17 @@ const CarouselReact = () => {
                       target='_blank'
                       rel='noopener noreferrer'
                     >
-                      aplicación
-                    </a>
-                    . Para mirar el{' '}
+                      aplicación,
+                    </a>{' '}
+                    para mirar el{' '}
                     <a
                       className='text-decoration-none fs-4'
                       href={item.repoLink}
                       target='_blank'
                       rel='noopener noreferrer'
                     >
-                      repositorio
+                      repositorio.
                     </a>
-                    .
                   </p>
                 </div>
               </div>
@@ -148,4 +130,5 @@ const CarouselReact = () => {
     </div>
   );
 };
+
 export default CarouselReact;
