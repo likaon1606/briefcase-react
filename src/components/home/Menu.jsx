@@ -80,7 +80,8 @@ const Menu = () => {
                 setClick4(false),
                 setClick5(false),
                 setClick6(false),
-                setIsOpen(!isOpen)
+                setIsOpen(!isOpen),
+                setClickMenu(!clickMenu)
               );
             }}
           >
@@ -99,7 +100,8 @@ const Menu = () => {
                 setClick4(false),
                 setClick5(false),
                 setClick6(false),
-                setIsOpen(!isOpen)
+                setIsOpen(!isOpen),
+                setClickMenu(!clickMenu)
               );
             }}
           >
@@ -118,7 +120,8 @@ const Menu = () => {
                 setClick4(false),
                 setClick5(false),
                 setClick6(false),
-                setIsOpen(!isOpen)
+                setIsOpen(!isOpen),
+                setClickMenu(!clickMenu)
               );
             }}
           >
@@ -137,7 +140,8 @@ const Menu = () => {
                 setClick3(false),
                 setClick5(false),
                 setClick6(false),
-                setIsOpen(!isOpen)
+                setIsOpen(!isOpen),
+                setClickMenu(!clickMenu)
               );
             }}
           >
@@ -156,7 +160,8 @@ const Menu = () => {
                 setClick3(false),
                 setClick4(false),
                 setClick6(false),
-                setIsOpen(!isOpen)
+                setIsOpen(!isOpen),
+                setClickMenu(!clickMenu)
               );
             }}
           >
@@ -175,7 +180,8 @@ const Menu = () => {
                 setClick3(false),
                 setClick4(false),
                 setClick5(false),
-                setIsOpen(!isOpen)
+                setIsOpen(!isOpen),
+                setClickMenu(!clickMenu)
               );
             }}
           >
