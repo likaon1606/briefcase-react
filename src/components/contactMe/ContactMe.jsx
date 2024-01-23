@@ -18,7 +18,7 @@ const ContactMe = () => {
           <div className="contact-me">
             <img src={phone} alt="phone" className="img-contactme" />
             <h4>
-              <a href="tel:+525532604568">(+52) 3260 4568</a>
+              <a href="tel:+525532604568">55 3260 4568</a>
             </h4>
           </div>
           <div className="contact-me">
