@@ -11,12 +11,12 @@ const AboutMe = () => {
         <div className='section-about'>
           <img src={me} alt='me' />
           <p>
-            Soy desarrollador Full-Stack. He realizado proyectos en conjunto y
-            también individuales, tanto académicos como profesionales. Gusto de
-            aprender de manera autodidacta y estoy en busca de retos
-            profesionales como programador. Estoy en constante participación en
-            proyectos parciales para el país Chile y clientes propios que
-            requieren realizar un sitio a la medida.
+            Soy un profesional proactivo, entregado al aprendizaje autodidacta.
+            He colaborado en varios proyectos para la ONG Surgencia en el país
+            de <strong> Chile</strong> y actualmente coordinando proyectos para
+            Grupo Velzra en <strong>México y Panamá.</strong> Estoy en constante
+            actualización en programación y soporte IT, además de resolver
+            problemas en software y hardware a profundidad.
           </p>
         </div>
         <div className='broken-sheet'></div>
