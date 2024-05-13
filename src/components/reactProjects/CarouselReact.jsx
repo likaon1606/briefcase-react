@@ -4,6 +4,7 @@ import surgencia from '../../assets/img/Projects/surgencia.jpg';
 import ahorcado from '../../assets/img/Projects/Ahorcado.jpg';
 import memory from '../../assets/img/Projects/memorygame.jpg';
 import tasklist from '../../assets/img/Projects/tasklist.jpg';
+import velzra from '../../assets/img/velzra.png';
 
 import '../../styles/cerfications.css/carouselCertifications.css';
 
@@ -41,6 +42,15 @@ const CarouselReact = () => {
           'Juego donde hay una serie de preguntas y se debe adivinar la palabra. Aparecen algunos guiones con la longitud de la respuesta correcta, si la letra que se elige está en la palabra, sustituirá los guiones de la posición y aparecerá en ver, no se podrá elegir otra vez la misma letra, si se falla, la letra elegida se torna roja. Se tienen 5 intentos.',
         appLink: 'https://illustrious-longma-fa9493.netlify.app/',
         repoLink: 'https://github.com/likaon1606/Ahorcado',
+      },
+      {
+        url: velzra,
+        title: 'Sitio Grupo Velzra',
+        technologies: 'React.js, HTML5, CSS3 y JavaScript',
+        description:
+          'Sitio Web de la empresa Grupo Velzra. Sitio dedicado a construcción y pinturas con marcas como COMEX, TRUPER y Glidden.',
+        appLink: 'https://grupovelzra.com/',
+        repoLink: 'https://github.com/likaon1606/grupo_velzra',
       },
       {
         url: memory,

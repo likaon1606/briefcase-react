@@ -3,6 +3,9 @@ import React, { useState, useMemo } from 'react';
 import mwd from '../../assets/img/Projects/mwd.jpg';
 import bio from '../../assets/img/Projects/biomedicina.jpg';
 import itami from '../../assets/img/Projects/itami.jpg';
+import siv from '../../assets/img/siv.png';
+import glidden from '../../assets/img/glidden.png';
+import sport from '../../assets/img/sport.png';
 
 import '../../styles/cerfications.css/carouselCertifications.css';
 
@@ -44,6 +47,30 @@ const CarouselWordpress = () => {
         description:
           'Sitio donde se ofrecen servicios de rayos x, medicina intervencionista y productos con CBD permitido por COFEPRIS',
         appLink: 'https://itaminonaimedicinaperioperatoria.com/',
+      },
+      {
+        url: siv,
+        title: 'Soluciones Industriales Veltor',
+        technologies: 'WordPress',
+        description:
+          'Sitio oficial de construcción y remodelación con marcas como COMEX y TRUPER',
+        appLink: 'https://sivconstructora.com/',
+      },
+      {
+        url: glidden,
+        title: 'Pinturas Glidden',
+        technologies: 'WordPress',
+        description:
+          'Sitio oficial de publicidad en pintura marca Glidden, con presencia en México y Panamá',
+        appLink: 'https://gliddenstore.com/',
+      },
+      {
+        url: sport,
+        title: 'Pintura y remodelación en autodrómo (México y Panamá)',
+        technologies: 'WordPress',
+        description:
+          'Sitio oficial en donde se publicita la marca de pinturas oficial en autodrómo de Panamá',
+        appLink: 'https://sport-marking.com/',
       },
     ],
     []
@@ -87,14 +114,14 @@ const CarouselWordpress = () => {
                     {item.description}
                   </p>
                   <p className='fw-semibold'>
-                    Para ir a la{' '}
+                    Para ir al{' '}
                     <a
                       className='text-decoration-none fs-4'
                       href={item.appLink}
                       target='_blank'
                       rel='noopener noreferrer'
                     >
-                      aplicación,
+                      sitio,
                     </a>{' '}
                   </p>
                 </div>
