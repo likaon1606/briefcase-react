@@ -1,7 +1,7 @@
 import React from 'react';
 import '../../styles/home/aboutme.css';
 import Images from '../home/Images';
-import me from '../../assets/img/mia-pro.png';
+import me from '../../assets/img/mia.png';
 
 const AboutMe = () => {
   return (

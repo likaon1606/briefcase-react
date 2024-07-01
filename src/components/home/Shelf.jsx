@@ -2,7 +2,7 @@ import React from 'react';
 import '../../styles/home/shelf.css';
 
 import linkedin from '../../assets/img/ink.png';
-import mwd from '../../assets/img/MWD.png';
+// import mwd from '../../assets/img/MWD.png';
 import git from '../../assets/img/github.png';
 import whats from '../../assets/img/whatsapp.png';
 
@@ -18,10 +18,10 @@ const Shelf = () => {
           src='https://demo.gridgum.com/free-templates/blogger/wp-content/themes/Blogger/images/bg_socials.png'
           alt='shadow'
         />
-        <img
+        {/* <img
           src='https://demo.gridgum.com/free-templates/blogger/wp-content/themes/Blogger/images/bg_socials.png'
           alt='shadow'
-        />
+        /> */}
         <img
           src='https://demo.gridgum.com/free-templates/blogger/wp-content/themes/Blogger/images/bg_socials.png'
           alt='shadow'
@@ -44,11 +44,11 @@ const Shelf = () => {
             <img src={linkedin} alt='linkedin' />
           </a>
         </div>
-        <div>
+        {/* <div>
           <a href='https://mexwebdesign.com/' target='blank'>
             <img src={mwd} alt='mwd' />
           </a>
-        </div>
+        </div> */}
         <div>
           <a href='https://github.com/likaon1606' target='blank'>
             <img src={git} alt='github' />
