@@ -67,7 +67,7 @@ const Shelf = () => {
       <div className='copyright'>
         <p>
           ®Todos los derechos reservados 2024.{' '}
-          <p>Sitio desarrollado por Ariel.F.G.</p>{' '}
+          <br/>Sitio desarrollado por Ariel.F.G.
         </p>
       </div>
     </div>
