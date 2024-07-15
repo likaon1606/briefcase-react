@@ -5,7 +5,7 @@ import bio from '../../assets/img/Projects/biomedicina.jpg';
 import itami from '../../assets/img/Projects/itami.jpg';
 import siv from '../../assets/img/siv.png';
 import glidden from '../../assets/img/glidden.png';
-import sport from '../../assets/img/sport.png';
+import velzra from '../../assets/img/velzra.png';
 
 import '../../styles/cerfications.css/carouselCertifications.css';
 
@@ -65,12 +65,12 @@ const CarouselWordpress = () => {
         appLink: 'https://gliddenstore.com/',
       },
       {
-        url: sport,
-        title: 'Pintura y remodelación en autodrómo (México y Panamá)',
+        url: velzra,
+        title: 'Todo en remodelación, pinturas, herramientas y más. (México y Panamá)',
         technologies: 'WordPress',
         description:
-          'Sitio oficial en donde se publicita la marca de pinturas oficial en autodrómo de Panamá',
-        appLink: 'https://sport-marking.com/',
+          'Sitio oficial en donde se publicita la marca de pinturas oficial PPG para México y Panamá',
+        appLink: 'https://grupovelzra.com/',
       },
     ],
     []
