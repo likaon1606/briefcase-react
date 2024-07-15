@@ -1,5 +1,6 @@
 import React, { useState, useMemo } from 'react';
 
+import velzra from '../../assets/img/Projects/velrza.png';
 import portafolio from '../../assets/img/Projects/portafolio.jpg';
 import gol from '../../assets/img/Projects/GOL.jpg';
 import treasure from '../../assets/img/Projects/TESORO.jpg';
@@ -21,6 +22,15 @@ const Carousel = () => {
 
   const items = useMemo(
     () => [
+      {
+        url: velzra,
+        title: 'Grupo Velzra',
+        technologies: 'Tecnologías: HTML, CSS y React.js',
+        description:
+          'Sitio dedicado a la construcción y remodelación, es un sitio en desarrollo que se puede traducir de español a inglés y proximamente se traducirá a 5 idiomas',
+        appLink: 'https://grupovelzracom.netlify.app/',
+        repoLink: 'https://github.com/likaon1606/grupo_velzra',
+      },
       {
         url: portafolio,
         title: 'Primer portafolio',
