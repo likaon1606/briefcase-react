@@ -1,9 +1,9 @@
 import React, { useState, useMemo } from 'react';
 
 import surgencia from '../../assets/img/Projects/surgencia.jpg';
-import ahorcado from '../../assets/img/Projects/Ahorcado.jpg';
+import hanged from '../../assets/img/Projects/Ahorcado.jpg';
 import memory from '../../assets/img/Projects/memorygame.jpg';
-import tasklist from '../../assets/img/Projects/tasklist.jpg';
+import guitars from '../../assets/img/Projects/tienda_guitarras.jpg';
 import velzra from '../../assets/img/velzra.png';
 
 import '../../styles/cerfications.css/carouselCertifications.css';
@@ -24,6 +24,15 @@ const CarouselReact = () => {
   const items = useMemo(
     () => [
       {
+        url: guitars,
+        title: 'Tienda de Guitarras',
+        technologies: 'Tecnologías: React.js y Bootstrap',
+        description:
+          'Tienda de guitarras en donde el usuario puede elegir un producto, y se utiliza la persistencia de datos con localStorage para que los datos no se pierdan al recargar, se puede aumentar cantidades, se suman preciosy se puede vaciar el carrito desde un botón regresando el state del cart a un arreglo vacío',
+        appLink: 'https://guitar-store-liard.vercel.app/',
+        repoLink: 'https://github.com/likaon1606/taskListFormik',
+      },
+      {
         url: surgencia,
         title: 'Sitio para reportes medio ambientales',
         technologies:
@@ -34,7 +43,7 @@ const CarouselReact = () => {
         repoLink: 'https://github.com/likaon1606/surgencia',
       },
       {
-        url: ahorcado,
+        url: hanged,
         title: 'El juego del Ahorcado',
         technologies:
           'React.js + Vite, useContext para el manejo de estados, renderizado condicional. ',
@@ -61,15 +70,6 @@ const CarouselReact = () => {
           'Juego donde se debe encontrar las parejas de imagenes iguales, si no es la pareja, las cartas se voltean, no se pueden elegir más de 2 cartas al mismo tiempo, una vez encontradas todas, se gana y s epuede repetir el juego.',
         appLink: 'https://likaon1606.github.io/memory_game/',
         repoLink: 'https://github.com/likaon1606/memory_game',
-      },
-      {
-        url: tasklist,
-        title: 'Lista de tareas por hacer',
-        technologies: 'Tecnologías: React.js, Bootstrap, Formik .',
-        description:
-          'Aplicación donde se puede crear, eliminar, o descartar la tarea, utilizando renderizado condicional.',
-        appLink: 'https://fanciful-ganache-1232db.netlify.app/',
-        repoLink: 'https://github.com/likaon1606/taskListFormik',
       },
     ],
     []
