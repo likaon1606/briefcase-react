@@ -4,6 +4,7 @@ import surgencia from '../../assets/img/Projects/surgencia.jpg';
 import hanged from '../../assets/img/Projects/Ahorcado.jpg';
 import memory from '../../assets/img/Projects/memorygame.jpg';
 import guitars from '../../assets/img/Projects/tienda_guitarras.jpg';
+import calories from '../../assets/img/Projects/calorias.png'
 import velzra from '../../assets/img/velzra.png';
 
 import '../../styles/cerfications.css/carouselCertifications.css';
@@ -31,6 +32,15 @@ const CarouselReact = () => {
           'Tienda de guitarras en donde el usuario puede elegir un producto, y se utiliza la persistencia de datos con localStorage para que los datos no se pierdan al recargar, se puede aumentar cantidades, se suman preciosy se puede vaciar el carrito desde un botón regresando el state del cart a un arreglo vacío',
         appLink: 'https://guitar-store-liard.vercel.app/',
         repoLink: 'https://github.com/likaon1606/taskListFormik',
+      },
+      {
+        url: calories,
+        title: 'Contador de Calorias',
+        technologies: 'Tecnologías: React.js, localStorage para la persistencia de datos, useMemo, useEffect, useReducer y Tailwind',
+        description:
+          'Puedes ingresar comidas o ejercicio, anotando las calorias que contiene cada alimento y descontando el deficit calorico por la cantidad de ejercicio realizado. Además, puedes reiniciar los datos con el botón "Reiniciar App" para eliminar todo lo que hayas ingresado. La App es responsive',
+        appLink: 'https://contador-calorias-psi.vercel.app/',
+        repoLink: 'https://github.com/likaon1606/contador_calorias',
       },
       {
         url: surgencia,
