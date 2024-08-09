@@ -11,12 +11,7 @@ const AboutMe = () => {
         <div className='section-about'>
           <img src={me} alt='me' />
           <p>
-            Soy un profesional proactivo, entregado al aprendizaje autodidacta.
-            He colaborado en varios proyectos para la ONG Surgencia en el país
-            de <strong> Chile</strong> y actualmente coordinando proyectos para
-            Grupo Velzra en <strong>México y Panamá.</strong> Estoy en constante
-            actualización en programación y soporte IT, además de resolver
-            problemas en software y hardware a profundidad.
+          Desarrollador Full Stack con experiencia en tecnologías como <strong>JavaScript, React.js, TypeScript, Node.js, MySQL,</strong> y otras relacionadas con el desarrollo web. Proactivo y autodidacta, he colaborado en varios proyectos internacionales para países como <strong>Chile y Panamá</strong> y me mantengo en constante actualización en programación y soporte IT.
           </p>
         </div>
         <div className='broken-sheet'></div>
