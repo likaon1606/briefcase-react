@@ -1,11 +1,11 @@
 import React, { useState, useMemo } from 'react';
 
-import surgencia from '../../assets/img/Projects/surgencia.jpg';
-import hanged from '../../assets/img/Projects/Ahorcado.jpg';
-import memory from '../../assets/img/Projects/memorygame.jpg';
-import guitars from '../../assets/img/Projects/tienda_guitarras.jpg';
-import calories from '../../assets/img/Projects/calorias.png'
-import velzra from '../../assets/img/velzra.png';
+import surgencia from '../../assets/img/Projects/surgencia.webp';
+import hanged from '../../assets/img/Projects/Ahorcado.webp';
+import memory from '../../assets/img/Projects/memorygame.webp';
+import guitars from '../../assets/img/Projects/tienda_guitarras.webp';
+import calories from '../../assets/img/Projects/calorias.webp';
+import velzra from '../../assets/img/Projects/velrza.webp';
 
 import '../../styles/cerfications.css/carouselCertifications.css';
 

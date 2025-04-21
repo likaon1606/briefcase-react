@@ -1,11 +1,11 @@
 import React, { useState, useMemo } from 'react';
 
-import mwd from '../../assets/img/Projects/mwd.jpg';
-import bio from '../../assets/img/Projects/biomedicina.jpg';
-import itami from '../../assets/img/Projects/itami.jpg';
-import siv from '../../assets/img/siv.png';
-import glidden from '../../assets/img/glidden.png';
-import velzra from '../../assets/img/velzra.png';
+import mwd from '../../assets/img/Projects/mwd.webp';
+import bio from '../../assets/img/Projects/biomedicina.webp';
+import itami from '../../assets/img/Projects/itami.webp';
+import siv from '../../assets/img/siv.webp';
+import glidden from '../../assets/img/glidden.webp';
+import velzra from '../../assets/img/velzra.webp';
 
 import '../../styles/cerfications.css/carouselCertifications.css';
 

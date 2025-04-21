@@ -1,9 +1,9 @@
 import React, { useState, useMemo } from 'react';
 
-import velzra from '../../assets/img/Projects/velrza.png';
-import portafolio from '../../assets/img/Projects/portafolio.jpg';
-import gol from '../../assets/img/Projects/GOL.jpg';
-import treasure from '../../assets/img/Projects/TESORO.jpg';
+import velzra from '../../assets/img/Projects/velrza.webp';
+import portafolio from '../../assets/img/Projects/portafolio.webp';
+import gol from '../../assets/img/Projects/GOL.webp';
+import treasure from '../../assets/img/Projects/TESORO.webp';
 
 import '../../styles/cerfications.css/carouselCertifications.css';
 

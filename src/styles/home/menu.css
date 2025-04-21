@@ -31,9 +31,14 @@
 
 .menu-img {
   position: absolute;
-  visibility: hidden;
-  display: flex;
+  opacity: 0;
+  transition: opacity 0.3s ease;
   z-index: 1;
+  display: flex;
+}
+
+.menu-img.open {
+  opacity: 1;
 }
 
 .Link {
@@ -133,6 +138,7 @@
     padding: 2%;
     margin-bottom: 1rem;
   }
+
   .photo {
     width: 15%;
     position: absolute;
@@ -146,21 +152,23 @@
     margin-left: 10%;
     margin-top: 3.8%;
   }
+
   .sub-menu ul {
     margin-top: 1%;
   }
+
   .sub-menu li {
     font-size: 1.25rem;
     display: block;
     padding: 0;
     text-align: center;
   }
+
   .menu-img {
     border-radius: 10%;
   }
 
   .menu-img img {
-    visibility: visible;
     justify-content: center;
     margin-top: -60%;
     padding-bottom: 30px;
@@ -171,12 +179,15 @@
   .button-menu {
     margin: -1px;
     padding-bottom: 10px;
-    display: block;
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
     border-radius: 4px;
     left: -150%;
     z-index: 3;
   }
+
   .open {
+    opacity: 1;
     transition: 0.5s;
     left: -1px;
   }
@@ -186,10 +197,6 @@
   .head p {
     font-size: 40px;
   }
-
-  /* .sub-menu {
-    margin-top: 4%;
-  } */
 
   .sub-menu ul {
     margin-top: 5%;

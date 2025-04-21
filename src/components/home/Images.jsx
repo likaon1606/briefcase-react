@@ -1,9 +1,9 @@
 import '../../styles/home/images.css';
 
-import phone from '../../assets/img/phone.png';
-import coffee from '../../assets/img/coffe.png';
-import notebook from '../../assets/img/notebook.png';
-import headphones from '../../assets/img/headphones.png';
+import phone from '../../assets/img/phone.webp';
+import coffee from '../../assets/img/coffe.webp';
+import notebook from '../../assets/img/notebook.webp';
+import headphones from '../../assets/img/headphones.webp';
 
 const Images = () => {
   return (

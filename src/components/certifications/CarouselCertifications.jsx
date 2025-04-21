@@ -1,10 +1,10 @@
 import React, { useState, useMemo } from 'react';
 
-import html from '../../assets/img/CONSTANCIAS/HTML-CSS.jpg';
-import reactImage from '../../assets/img/CONSTANCIAS/REACT.jpg';
-import nodeImage from '../../assets/img/CONSTANCIAS/NODE.jpg';
-import fullImage from '../../assets/img/CONSTANCIAS/FULL.jpg';
-import python from '../../assets/img/CONSTANCIAS/python.png';
+import html from '../../assets/img/CONSTANCIAS/HTML-CSS.webp';
+import reactImage from '../../assets/img/CONSTANCIAS/REACT.webp';
+import nodeImage from '../../assets/img/CONSTANCIAS/NODE.webp';
+import fullImage from '../../assets/img/CONSTANCIAS/FULL.webp';
+import python from '../../assets/img/CONSTANCIAS/python.webp';
 
 import '../../styles/cerfications.css/carouselCertifications.css';
 
